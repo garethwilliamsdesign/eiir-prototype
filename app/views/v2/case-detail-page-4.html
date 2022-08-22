@@ -1,0 +1,197 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Vikki ADAMS – Search the bankruptcy and insolvency register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukPhaseBanner({
+    tag: {
+      text: "beta"
+    },
+    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  }) }}
+  {{ govukBackLink({
+    text: "Back",
+    href: "search-results-page"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <h1 class="govuk-heading-xl">
+        VIKKI ADAMS
+      </h1>
+      
+      <h2 class="govuk-heading-l">
+        Individual details
+      </h2>
+
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px; display: inline-block;">
+        <p style="margin: 0;">Title</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;">Mrs</p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <div style="margin-bottom: 30px; display: inline-block;">
+        <p style="margin: 0;">Last known address</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;">3 Wavell Avenue, Wrexham, GBR, LL13 8SS</p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px; display: inline-block;">
+        <p style="margin: 0;">Date of birth</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;">07 October 1961</p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <div style="margin-bottom: 30px; display: inline-block;">
+        <p style="margin: 0;">Occupation</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;"></p>
+      </div>
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      <div style="margin-bottom: 30px; display: inline-block;">
+        <p style="margin: 0;">Gender</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;">Female</p>
+      </div>
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+      <div style="margin-bottom: 50px; display: inline-block;">
+        <p style="margin: 0;">This person may also be known as</p>
+        <p style="margin-top: 0.26316em; font-weight: bold;">(NEE WILLIAMS) (Alias )</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-full">
+
+      <div class="govuk-tabs" data-module="govuk-tabs">
+        <h2 class="govuk-tabs__title">
+          Contents
+        </h2>
+        <ul class="govuk-tabs__list">
+          <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
+            <a class="govuk-tabs__tab" href="#past-day">
+              Insolvency case details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-week">
+              Insolvency practitioner details
+            </a>
+          </li>
+          <li class="govuk-tabs__list-item">
+            <a class="govuk-tabs__tab" href="#past-month">
+              Insolvency service details
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-tabs__panel" id="past-day">
+          <h2 class="govuk-heading-l">Insolvency case details</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Court</th>
+                <td class="govuk-table__cell">Voluntary Liquidation Cases</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Type</th>
+                <td class="govuk-table__cell">Individual Voluntary Arrangement</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Number</th>
+                <td class="govuk-table__cell"></td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Arrangement date</th>
+                <td class="govuk-table__cell">16 March 2016</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Status</th>
+                <td class="govuk-table__cell">Completed on 17 June 2022</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Notification date</th>
+                <td class="govuk-table__cell">20 June 2022</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-week">
+          <h2 class="govuk-heading-l">Insolvency practitioner details</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Main insolvency practitioner</th>
+                <td class="govuk-table__cell">KATY WALKER</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Firm</th>
+                <td class="govuk-table__cell">CREDITFIX LIMITED</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Address</th>
+                <td class="govuk-table__cell">2rd Floor, 4 West Regent Street, GLASGOW, United Kingdom, G2 1RW</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Telephone</th>
+                <td class="govuk-table__cell">0800 043 1431</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-month">
+          <h2 class="govuk-heading-l">Insolvency service details</h2>
+          <table class="govuk-table">
+            <tbody class="govuk-table__body">
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Insolvency service office</th>
+                <td class="govuk-table__cell">The Insolvency Service</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Contact</th>
+                <td class="govuk-table__cell">Enquiry Desk</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Address</th>
+                <td class="govuk-table__cell">Cannon House, 18 Priory Queensway, Birmingham, United Kingdom, B4 6FD</td>
+              </tr>
+              <tr class="govuk-table__row">
+                <th scope="row" class="govuk-table__header">Telephone</th>
+                <td class="govuk-table__cell">0303 003 1742</td>
+              </tr>
+            </tbody>
+          </table>    
+        </div>
+      </div>
+
+      <details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Why is my case still visible?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
+        </div>
+      </details>
+
+    </div>
+  </div>
+
+{% endblock %}
