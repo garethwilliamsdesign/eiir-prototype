@@ -2,7 +2,7 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-  Shirley Hilary ALLEN – Search the bankruptcy and insolvency register
+VIKKI ADAMS – Search the bankruptcy and insolvency register
 {% endblock %}
 
 {% block beforeContent %}
@@ -24,8 +24,23 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        VIKKI ADAMS
+        {insolvency-case-type} report
       </h1>
+
+      <div class="govuk-inset-text" style="margin-bottom: 50px;">
+        Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
+      </div>
+
+      <!--<details class="govuk-details" data-module="govuk-details">
+        <summary class="govuk-details__summary">
+          <span class="govuk-details__summary-text">
+            Why is my case still visible?
+          </span>
+        </summary>
+        <div class="govuk-details__text">
+          Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
+        </div>
+      </details>-->
 
     </div>
   </div>
@@ -37,6 +52,22 @@
       </h2>
 
       <dl class="govuk-summary-list" style="margin-bottom: 60px;">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Surname
+          </dt>
+          <dd class="govuk-summary-list__value">
+            ADAMS
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Forename(s)
+          </dt>
+          <dd class="govuk-summary-list__value">
+            VIKKI
+          </dd>
+        </div>
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
             Title
@@ -73,7 +104,7 @@
             Last known address
           </dt>
           <dd class="govuk-summary-list__value">
-            3 Wavell Avenue<br>Wrexham<br>GBR<br>LL13 8SS
+            74 Sarahs Croft<br>Netherton<br>GBR<br>L30 3RX
           </dd>
         </div>
         <div class="govuk-summary-list__row">
@@ -81,7 +112,7 @@
             This person may also be known as
           </dt>
           <dd class="govuk-summary-list__value">
-            STEVENS (Alias ) or WILLIAMS (Alias )
+            (NEE WILLIAMS) (Alias )
           </dd>
         </div>
       </dl>
@@ -197,13 +228,13 @@
       </dl>
 
       <h2 class="govuk-heading-l">
-        Insolvency service contact details
+        Insolvency Service contact details
       </h2>
 
       <dl class="govuk-summary-list" style="margin-bottom: 60px;">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
-            Insolvency service office	
+            Insolvency Service office	
           </dt>
           <dd class="govuk-summary-list__value">
             The Insolvency Service
@@ -242,17 +273,6 @@
           </dd>
         </div>
       </dl>
-
-      <!--<details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Why is my case still visible?
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
-        </div>
-      </details>-->
 
     </div>
     <!--<div class="govuk-grid-column-one-third">
