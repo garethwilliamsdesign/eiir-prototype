@@ -1,0 +1,210 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Search results – Search the individual insolvency register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "search-page"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Search results
+      </h1>
+
+      <p class="govuk-body govuk-!-font-weight-bold">Surname starting with WILLIAMS<br>
+      Forename was left blank<br>
+      Searching across ALL courts in England and Wales</p>
+
+      <p class="govuk-body">Your search returned <span class="govuk-!-font-weight-bold">3244</span> records.<br>Click on the <span class="govuk-!-font-weight-bold">Surname</span> to see the Individual Insolvency Register Report</p>
+
+      <div class="govuk-inset-text" style="margin-bottom: 50px;">
+        Also included in the results of your search will be those individuals with an alias or a previous name which matches your search criteria.
+      </div>
+
+    </div>
+  </div>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+
+      <h2 class="govuk-heading-l">
+        Filter
+      </h2>
+
+      <!--<div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Court
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Monthly
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                Yearly
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>-->
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Type
+            </h2>
+          </legend>
+          <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
+              <label class="govuk-label govuk-radios__label" for="changed-name">
+                Individual Voluntary Arrangement
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                Bankruptcy
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                Debt Relief Order
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
+              <label class="govuk-label govuk-radios__label" for="changed-name-2">
+                Bankruptcy Restrictions Undertaking
+              </label>
+            </div>           
+          </div>
+        </fieldset>
+      </div>
+
+
+    </div>
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="search-result" style="position: relative; padding: 15px 40px 15px 0; border-top: 1px solid #bfc1c3;">
+        <h3 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+          <a class="govuk-link--no-visited-state" href="/v2/case-detail-page-6B">VIKKI ADAMS</a>
+        </h3>
+        <ul class="govuk-list search-result-details">
+          <li>
+            Date of birth: 05/09/1978
+          </li>
+          <li>
+            Court: VOL
+          </li>
+          <li>
+            Number:
+          </li>
+          <li>
+            Start date: 04/07/2019
+          </li>
+          <li>
+            Type: IVA
+          </li>
+        </ul> 
+      </div>   
+      <div class="search-result" style="position: relative; padding: 15px 40px 15px 0; border-top: 1px solid #bfc1c3;">
+        <h3 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+          <a class="govuk-link--no-visited-state" href="/v2/case-detail-page-6B">VIKKI ADAMS</a>
+        </h3>
+        <ul class="govuk-list search-result-details">
+          <li>
+            Date of birth: 05/09/1978
+          </li>
+          <li>
+            Court: VOL
+          </li>
+          <li>
+            Number:
+          </li>
+          <li>
+            Start date: 04/07/2019
+          </li>
+          <li>
+            Type: IVA
+          </li>
+        </ul> 
+      </div>   
+      <div class="search-result" style="position: relative; padding: 15px 40px 15px 0; border-top: 1px solid #bfc1c3;">
+        <h3 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+          <a class="govuk-link--no-visited-state" href="/v2/case-detail-page-6B">VIKKI ADAMS</a>
+        </h3>
+        <ul class="govuk-list search-result-details">
+          <li>
+            Date of birth: 05/09/1978
+          </li>
+          <li>
+            Court: VOL
+          </li>
+          <li>
+            Number:
+          </li>
+          <li>
+            Start date: 04/07/2019
+          </li>
+          <li>
+            Type: IVA
+          </li>
+        </ul> 
+      </div>   
+      
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <nav class="govuk-pagination" role="navigation" aria-label="results" style="display: flex;">
+        <div class="govuk-pagination__prev">
+          <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="prev">
+            <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+            </svg>
+            <span class="govuk-pagination__link-title">Previous</span></a>
+        </div>
+        <ul class="govuk-pagination__list">
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 1">
+              1
+            </a>
+          </li>
+          <li class="govuk-pagination__item govuk-pagination__item--current">
+            <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 2" aria-current="page">
+              2
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 3">
+              3
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-pagination__next">
+          <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg></a>
+        </div>
+      </nav>
+
+    </div>
+  </div>
+
+{% endblock %}

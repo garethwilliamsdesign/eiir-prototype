@@ -1,0 +1,58 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Search page – Search the Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "index"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">
+        Search page
+      </h1>
+
+      <p>Searching across ALL courts in England and Wales.</p>
+      <p>You can conduct your search by entering the full surname, or if you are unsure of the spelling, just the first few characters of the surname.</p>
+      <p>The forename is optional, but could significantly speed up your search if entered.</p>
+
+      <div class="govuk-inset-text">
+        If searching on a name containing non-alphabetic text such as an apostrophe (eg: O'DONALD), it is recommended that you just enter the first character of the surname and as much as possible of the forename.
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-font-weight-bold" for="surname">
+          Surname
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="surname" name="surname" type="text" spellcheck="false" aria-describedby="surname">
+      </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-font-weight-bold" for="forename">
+          Forename  (optional)
+        </label>
+        <input class="govuk-input govuk-input--width-10" id="forename" name="forename" type="text" spellcheck="false" aria-describedby="forename">
+      </div>
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" style="text-decoration:none;" href="/v3/search-results-page">
+          Start search
+        </a>
+        <a class="govuk-button govuk-button--secondary" style="text-decoration:none;" href="../v1">
+          Back
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+{% endblock %}
