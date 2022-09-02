@@ -2,15 +2,13 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-  Individual search page – Search the Individual Insolvency Register
+  Individual search page – Individual Insolvency Register
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukPhaseBanner({
-    tag: {
-      text: "beta"
-    },
-    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  {{ govukBackLink({
+    text: "Back",
+    href: "index"
   }) }}
 {% endblock %}
 
@@ -35,22 +33,19 @@
         <label class="govuk-label govuk-!-font-weight-bold" for="surname">
           Surname
         </label>
-        <input class="govuk-input govuk-input--width-10" id="surname" name="surname" type="text" spellcheck="false" aria-describedby="surname">
+        <input class="govuk-input govuk-input--width-20" id="surname" name="surname" type="text" spellcheck="false" aria-describedby="surname">
       </div>
 
       <div class="govuk-form-group">
         <label class="govuk-label govuk-!-font-weight-bold" for="forename">
           Forename  (optional)
         </label>
-        <input class="govuk-input govuk-input--width-10" id="forename" name="forename" type="text" spellcheck="false" aria-describedby="forename">
+        <input class="govuk-input govuk-input--width-20" id="forename" name="forename" type="text" spellcheck="false" aria-describedby="forename">
       </div>
 
       <div class="govuk-button-group">
-        <a class="govuk-button" style="text-decoration:none;" href="v1/individual-search-page">
+        <a class="govuk-button" style="text-decoration:none;" href="/v1/individual-search-results-page">
           Start search
-        </a>
-        <a class="govuk-button govuk-button--secondary" style="text-decoration:none;" href="../v1">
-          Back
         </a>
       </div>
 

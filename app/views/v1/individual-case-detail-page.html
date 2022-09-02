@@ -2,19 +2,13 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-VIKKI ADAMS – Search the bankruptcy and insolvency register
+  VIKKI ADAMS – Individual Insolvency Register
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukPhaseBanner({
-    tag: {
-      text: "beta"
-    },
-    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
-  }) }}
   {{ govukBackLink({
     text: "Back",
-    href: "search-results-page"
+    href: "individual-search-results-page"
   }) }}
 {% endblock %}
 
@@ -24,23 +18,18 @@ VIKKI ADAMS – Search the bankruptcy and insolvency register
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        {insolvency-case-type} report
+        Report requested for: VIKKI ADAMS
       </h1>
 
-      <div class="govuk-inset-text" style="margin-bottom: 50px;">
-        Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
-      </div>
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <!--<details class="govuk-details" data-module="govuk-details">
-        <summary class="govuk-details__summary">
-          <span class="govuk-details__summary-text">
-            Why is my case still visible?
-          </span>
-        </summary>
-        <div class="govuk-details__text">
-          Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
-        </div>
-      </details>-->
+      <p class="govuk-body">While every effort has been made to ensure that the information provided is accurate, occasionally errors may occur. If you identify information which appears to be incorrect or omitted, please inform us using the feedback links contained within this site, so that we can investigate the matter and correct the database as required.</p>
+      <p class="govuk-body">The <strong>Insolvency Case Details</strong> are taken from the Court Order made on the Order Date, and include the address(es) from which debts were incurred. They cannot be changed without the consent of the Court.</p>
+      <p class="govuk-body">The <strong>Individual Details</strong> may have changed since the Court Order but, even so, they might not reflect the person's current address or occupation at the time you make your search, and <strong>they should not be relied on as such</strong>.</p>
+      <p class="govuk-body">The Insolvency Service cannot accept responsibility for any errors or omissions as a result of negligence or otherwise. Please note that The Insolvency Service and Official Receivers cannot provide legal or financial advice. You should seek this from a Citizen's Advice Bureau, a solicitor, a qualified accountant, an authorised insolvency practitioner, reputable financial advisor or advice centre.</p>
+      <p class="govuk-body">The Individual Insolvency Register is a publicly available register and The Insolvency Service does not endorse, nor make any representations regarding, any use made of the data on the register by third parties.</p>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
     </div>
   </div>
@@ -120,6 +109,10 @@ VIKKI ADAMS – Search the bankruptcy and insolvency register
       <h2 class="govuk-heading-l">
         Insolvency case details
       </h2>
+
+      <div class="govuk-inset-text">
+        Individual Voluntary Arrangements will remain visible while they are Current, and for a period of 3 months after the Secretary of State receives notice of the revocation order, full implementation or termination of the agreement.
+      </div>
 
       <dl class="govuk-summary-list" style="margin-bottom: 60px;">
         <div class="govuk-summary-list__row">

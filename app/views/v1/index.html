@@ -1,5 +1,5 @@
 
-{% extends "layout.html" %}
+{% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
   Home – Individual Insolvency Register
@@ -28,20 +28,50 @@
 
       <p>Unless stated otherwise all proceedings are Main proceedings under Article 3(1), Council Regulation (EC) 2015/948 on insolvency proceedings ('EU Regulations 2015')</p>
 
-      <h2 class="govuk-heading-l">
-        Search the IIR
-      </h2>
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+      
+      <form action="/v1/index" method="post">
 
-      <p>Please choose how you wish to search the Register.</p>
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset" aria-describedby="search-hint">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Search the IIR
+              </h1>
+            </legend>
+            <div id="search-hint" class="govuk-hint">
+              Please choose how you wish to search the register:
+            </div>
 
-      <div class="govuk-button-group">
-        <a class="govuk-button" style="text-decoration:none;" href="v1/individual-search-page">
-          Search by name details
-        </a>
-        <a class="govuk-button" style="text-decoration:none;" href="v1/trading-name-search-page">
-          Search trading name details
-        </a>
-      </div>
+            {{ govukRadios({
+              idPrefix: "search",
+              name: "search",
+              items: [
+                {
+                  value: "individual",
+                  text: "Search by NAME details"
+                },
+                {
+                  value: "trading",
+                  text: "Search by TRADING NAME details"
+                }
+              ]
+            }) }}
+            
+          </fieldset>
+        </div>
+
+        <button type="submit" class="govuk-button" data-module="govuk-button" style="margin-bottom: 7px;">
+          Continue
+        </button>
+
+      </form>
+      
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <p>While every effort has been made to ensure that the information provided is accurate, occasionally errors may occur. If you identify information which appears to be incorrect or omitted, please inform us using the feedback links contained within this site, so that we can investigate the matter and correct the database as required.</p>
+      <p>The Insolvency Service cannot accept responsibility for any errors or omissions as a result of negligence or otherwise. Please note that The Insolvency Service and Official Receivers cannot provide legal or financial advice. You should seek this from a Citizen's Advice Bureau, a solicitor, a qualified accountant, an authorised insolvency practitioner, reputable financial advisor or advice centre.</p>
+      <p>The Individual Insolvency Register is a publicly available register and The Insolvency Service does not endorse, nor make any representations regarding, any use made of the data on the register by third parties.</p>
 
     </div>
   </div>

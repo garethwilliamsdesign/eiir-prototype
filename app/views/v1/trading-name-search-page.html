@@ -2,15 +2,13 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-  Trading name search page – Search the individual insolvency register
+  Trading name search page – Individual Insolvency Register
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukPhaseBanner({
-    tag: {
-      text: "beta"
-    },
-    html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+  {{ govukBackLink({
+    text: "Back",
+    href: "index"
   }) }}
 {% endblock %}
 
@@ -34,15 +32,12 @@
         <label class="govuk-label govuk-!-font-weight-bold" for="trading-name">
           Trading name
         </label>
-        <input class="govuk-input govuk-input--width-10" id="trading-name" name="trading-name" type="text" spellcheck="false" aria-describedby="trading-name">
+        <input class="govuk-input govuk-input--width-20" id="trading-name" name="trading-name" type="text" spellcheck="false" aria-describedby="trading-name">
       </div>
 
       <div class="govuk-button-group">
-        <a class="govuk-button" style="text-decoration:none;" href="v1/individual-search-page">
+        <a class="govuk-button" style="text-decoration:none;" href="/v1/trading-name-search-results-page">
           Start search
-        </a>
-        <a class="govuk-button govuk-button--secondary" style="text-decoration:none;" href="../v1">
-          Back
         </a>
       </div>
 
