@@ -8,7 +8,7 @@
 {% block beforeContent %}
   {{ govukBackLink({
     text: "Back",
-    href: "data-extract-terms-and-conditions-page"
+    href: "data-extract-terms-and-conditions-page-pc"
   }) }}
 {% endblock %}
 
@@ -17,25 +17,25 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        Data Extract Application Details
+      <h1 class="govuk-heading-l">
+        Data extract: application details
       </h1>
 
-      <div class="govuk-inset-text">
-        ALL fields MUST be completed for the Application to be accepted.
-      </div>
+      <p>
+        For your application to be accepted you <strong>must</strong>  complete all fields.
+      </p>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
       <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
           <h2 class="govuk-fieldset__heading">
-            Organisation or Company Details
+            Organisation or company details
           </h2>
         </legend>
         <div class="govuk-form-group">
           <label class="govuk-label" for="organisation">
-            Organisation or Company
+            Organisation or company
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation">
         </div>
@@ -45,13 +45,13 @@
           </label>
           <select class="govuk-select" id="type" name="type">
             <option value="published" selected>Other</option>
-            <option value="updated">Credit Reference Agency</option>
-            <option value="views">Credit Card Issuer</option>
-            <option value="comments">Bank/Building Society</option>
-            <option value="updated">Mortgage Provider</option>
-            <option value="views">Government Department</option>
-            <option value="comments">Financial Services</option>
-            <option value="comments">Debt Recovery Agents</option>
+            <option value="updated">Credit reference agency</option>
+            <option value="views">Credit card issuer</option>
+            <option value="comments">Bank or Building society</option>
+            <option value="updated">Mortgage provider</option>
+            <option value="views">Government department</option>
+            <option value="comments">Financial services</option>
+            <option value="comments">Debt recovery agents</option>
           </select>
         </div>
         <div class="govuk-form-group govuk-!-margin-bottom-1">
@@ -59,15 +59,15 @@
             Website
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
-        </div>      
+        </div>
       </fieldset>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
       <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
           <h2 class="govuk-fieldset__heading">
-            Contact Details
+            Contact details
           </h2>
         </legend>
         <div class="govuk-form-group">
@@ -77,58 +77,59 @@
           <select class="govuk-select" id="type" name="type">
             <option value="published" selected>Mr.</option>
             <option value="updated">Mrs.</option>
+            <option value="views">Miss.</option>
             <option value="views">Ms.</option>
           </select>
         </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="organisation">
-            First Name
+            First name
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation">
         </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="website">
-            Last Name
+            Last name
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
-        </div>      
+        </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="website">
-            Email
+            Email address
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
-        </div>      
+        </div>
         <div class="govuk-form-group govuk-!-margin-bottom-1">
           <label class="govuk-label" for="website">
-            Telephone
+            Telephone number
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
-        </div>      
+        </div>
       </fieldset>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
       <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
           <h2 class="govuk-fieldset__heading">
-            Contact Address
+            Contact address
           </h2>
         </legend>
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-line-1">
-            Address Line 1
+            Address line 1
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1">
         </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-line-2">
-            Address Line 2
+            Address line 2
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line-2">
         </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="city">
-            Town or City
+            Town or city
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city">
         </div>
@@ -152,7 +153,7 @@
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
       <a class="govuk-button" style="text-decoration:none;" href="data-extract-application-submitted-page">
-        Apply for Extract
+        Apply for extract
       </a>
 
     </div>
