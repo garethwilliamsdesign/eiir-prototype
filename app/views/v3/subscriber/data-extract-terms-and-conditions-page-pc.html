@@ -1,0 +1,54 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Data Extract Terms and Conditions – Individual Insolvency Register
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Data extract: Terms and conditions
+      </h1>
+
+      <p class="govuk-body">The Insolvency Service can now offer the option of downloading the contents of the Individual Insolvency Register as a data extract.</p>
+
+      <div class="govuk-inset-text">
+        You <strong>must</strong> agree to these terms and conditions; as this is an initial free trial, this page will not actually contain any real terms and conditions, but they will subsequently appear here for registered subscribers.
+      </div>
+
+      <p class="govuk-body">The extract will be available on a daily basis, and will be available for download from 09:30 each day. Each daily extract will contain the complete contents of the data available on The Individual Register for that day.</p>
+
+      <p class="govuk-body">This initial trial will run from 9 December 2005 until (at the latest) 31 January 2006.</p>
+
+      <div class="govuk-inset-text">During the trial, extracts will <strong>not</strong> be available on Saturdays or Sundays</div>
+
+      <p class="govuk-body">To continue with your application, use the Apply now button.</p>
+
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="agree" type="checkbox" value="agree">
+              <label class="govuk-label govuk-checkboxes__label govuk-!-font-weight-bold" for="agree">
+                I agree to the terms and conditions
+              </label>
+            </div>
+          </div>
+
+        </fieldset>
+      </div>
+
+      <a class="govuk-button" style="text-decoration:none;" href="data-extract-application-details-page">
+        Apply now
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
