@@ -5,6 +5,13 @@
   Application Submitted Successfully – Individual Insolvency Register
 {% endblock %}
 
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "data-extract-application-details-page"
+  }) }}
+{% endblock %}
+
 {% block content %}
 
   <div class="govuk-grid-row">
@@ -14,29 +21,106 @@
         Application Submitted Successfully
       </h1>
 
-      eIIR XML Extract - Application Submitted Successfully
-      Thanks, 4t3t 4t3 , for submitting your application to receive the eIIR XML Extract.
-      You will be notified via the email address you provided when your application has been approved.
-      (The email address provided was 34t3 )
-      Until your application has been approved, no access to the eIIR XML Extract will be permitted.
-      For your records, you may wish to note that we have the following details for your application
-      Company or Organisation Details
-      Company Name we3tq34
-      Company Type Credit Reference Agency
+      <p>Thanks, {full name}, for submitting your application to receive the eIIR XML Extract.</p>
+      <p>You will be notified via the email address you provided when your application has been approved.</p>
+      <p>(The email address provided was {email_address})</p>
+      <p>Until your application has been approved, no access to the eIIR XML Extract will be permitted.</p>
+      <p>For your records, you may wish to note that we have the following details for your application.</p>
 
-      Company Website 43t4t4
+      <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      Subscription Details
-      Application Submitted 05 September 2022
-      Subscriber Contact Details
-      Main Contact Mr. 4t3t 4t3
-      Address 34t34 4334t 433 34t3
+      <h2 class="govuk-heading-l">
+        Company or Organisation Details
+      </h2>
 
-      Email 34t3
+      <dl class="govuk-summary-list" style="margin-bottom: 60px;">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company Name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Experian
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company Type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Credit Reference Agency
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company Website
+          </dt>
+          <dd class="govuk-summary-list__value">
+            www.expieranplc.com
+          </dd>
+        </div>
+      </dl>
 
-      Telephone 43t34
+      <h2 class="govuk-heading-l">
+        Subscription Details
+      </h2>
 
-      Country United Kingdom
+      <dl class="govuk-summary-list" style="margin-bottom: 60px;">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Application Submitted
+          </dt>
+          <dd class="govuk-summary-list__value">
+            05 September 2022
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-l">
+        Subscriber Contact Details
+      </h2>
+
+      <dl class="govuk-summary-list" style="margin-bottom: 60px;">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Main Contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            05 September 2022
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Newenham House, Northern Cross, Malahide Road, Dublin 17, D17 AY61, Ireland
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email
+          </dt>
+          <dd class="govuk-summary-list__value">
+            joe.bloggs@experianplc.com
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Telephone
+          </dt>
+          <dd class="govuk-summary-list__value">
+            +44 (0) 344 481 8000
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Country
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Outside United Kingdom
+          </dd>
+        </div>
+      </dl>
 
     </div>
   </div>
