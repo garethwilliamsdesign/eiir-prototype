@@ -2,7 +2,7 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-  Search page – Search the Individual Insolvency Register
+  Individual search page – Individual Insolvency Register
 {% endblock %}
 
 {% block beforeContent %}
@@ -18,7 +18,7 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        Search page
+        Individual search page
       </h1>
 
       <p>Searching across ALL courts in England and Wales.</p>
@@ -30,15 +30,24 @@
       </div>
 
       <div class="govuk-form-group">
-        <div id="account-number-hint" class="govuk-hint">
-          Hint text...
-        </div>
-        <input class="govuk-input govuk-!-width-full" id="search" name="search" type="text" spellcheck="false" aria-describedby="search">
+        <label class="govuk-label govuk-!-font-weight-bold" for="surname">
+          Surname
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="surname" name="surname" type="text" spellcheck="false" aria-describedby="surname">
       </div>
 
-      <a class="govuk-button" style="text-decoration:none;" href="/v3/search-results-page">
-        Search
-      </a>
+      <div class="govuk-form-group">
+        <label class="govuk-label govuk-!-font-weight-bold" for="forename">
+          Forename  (optional)
+        </label>
+        <input class="govuk-input govuk-input--width-20" id="forename" name="forename" type="text" spellcheck="false" aria-describedby="forename">
+      </div>
+
+      <div class="govuk-button-group">
+        <a class="govuk-button" style="text-decoration:none;" href="individual-search-results-page">
+          Start search
+        </a>
+      </div>
 
     </div>
   </div>

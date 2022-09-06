@@ -1,8 +1,8 @@
 
-{% extends "layout_admin.html" %}
+{% extends "layout_subscriber.html" %}
 
 {% block pageTitle %}
-  Admin login – Search the Individual Insolvency Register
+  Subscriber login – Search the Individual Insolvency Register
 {% endblock %}
 
 {% block content %}
@@ -11,8 +11,10 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-xl">
-        Admin login
+        Subscriber login
       </h1>
+
+      <p class="govuk-body">Please enter your supplied Username and Password and press LogIn</p>
 
       <fieldset class="govuk-fieldset">      
         <div class="govuk-form-group">
@@ -28,8 +30,8 @@
           <input class="govuk-input govuk-input--width-10" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line2">
         </div>      
       </fieldset>
-
-      <a class="govuk-button" style="text-decoration:none;" href="/v3/admin/dashboard">
+      
+      <a class="govuk-button" style="text-decoration:none;" href="/v3/subscriber/???">
         Login
       </a>
 

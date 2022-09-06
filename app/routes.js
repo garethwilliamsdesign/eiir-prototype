@@ -12,10 +12,10 @@ router.post('/v1/index', function (req, res) {
     // Check whether the variable matches a condition
     if (search == "individual"){
       // Send user to next page
-      res.redirect('/v1/individual-search-page')
+      res.redirect('/citizen/v1/individual-search-page')
     } else {
       // Send user to ineligible page
-      res.redirect('/v1/trading-name-search-page')
+      res.redirect('/citizen/v1/trading-name-search-page')
     }
   
   })
