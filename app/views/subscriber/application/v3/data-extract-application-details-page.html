@@ -1,0 +1,156 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Data Extract Application Details – Individual Insolvency Register
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
+        Data extract: application details
+      </h1>
+
+      <!--<p>
+        For your application to be accepted you <strong>must</strong>  complete all fields.
+      </p>-->
+
+      <!--<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">-->
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            Organisation or company details
+          </h2>
+        </legend>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="organisation">
+            Name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Type
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="published" selected>Other</option>
+            <option value="updated">Credit reference agency</option>
+            <option value="views">Credit card issuer</option>
+            <option value="comments">Bank or Building society</option>
+            <option value="updated">Mortgage provider</option>
+            <option value="views">Government department</option>
+            <option value="comments">Financial services</option>
+            <option value="comments">Debt recovery agents</option>
+          </select>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+          <label class="govuk-label" for="website">
+            Website
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+      </fieldset>
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            Main contact details
+          </h2>
+        </legend>
+        <!--<div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Title
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="published" selected>Mr.</option>
+            <option value="updated">Mrs.</option>
+            <option value="views">Miss.</option>
+            <option value="views">Ms.</option>
+          </select>
+        </div>-->
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="full-name">
+            Full name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="full-name" name="full-name" type="text" autocomplete="full-name">
+        </div>
+        <!--<div class="govuk-form-group">
+          <label class="govuk-label" for="website">
+            Last name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>-->
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-1">
+            Address line 1
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-2">
+            Address line 2 (optional)
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line-2">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="city">
+            Town or city
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="postcode">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="postcode" name="postcode" type="text" autocomplete="postcode">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Country
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="united-kingdom" selected>United Kingdom</option>
+            <option value="outside-united-kingdom">Outside United Kingdom</option>
+          </select>
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="website">
+            Telephone number
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+          <label class="govuk-label" for="website">
+            Email address
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+      </fieldset>
+
+      <!--<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">-->
+
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset">
+          <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste" name="agree" type="checkbox" value="agree">
+              <label class="govuk-label govuk-checkboxes__label" for="agree">
+                I agree to the <a href="#" class="govuk-link">terms and conditions</a>.
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+
+      <a class="govuk-button" style="text-decoration:none;" href="data-extract-application-check-your-answers-page">
+        Submit
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
