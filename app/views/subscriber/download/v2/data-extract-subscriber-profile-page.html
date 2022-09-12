@@ -1,0 +1,145 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Data extract subscriber profile – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "data-extract-download-page"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
+        Data extract subscriber profile
+      </h1>
+
+      <div class="govuk-inset-text">
+        Your Subscription Now Has 842 days before Expiry
+      </div>
+
+      <p class="govuk-body">Now that your application has been approved, access to the eIIR XML Extract is permitted.</p>
+      <p class="govuk-body govuk-!-margin-bottom-8">For your records, you may wish to note that we have the following details associated with your subscription</p>
+
+      <h2 class="govuk-heading-m">Company or organisation details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company name
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Insolvency Service Internal Account
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company type
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Government Department
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Company website
+          </dt>
+          <dd class="govuk-summary-list__value">
+            www.insolvencydirect.bis.gov.uk
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">Subscription Details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Application Submitted
+          </dt>
+          <dd class="govuk-summary-list__value">
+            09 December 2005
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Subscription Start Date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            12 September 2005
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Subscription End Date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            01 January 2025
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Subscription Expires In
+          </dt>
+          <dd class="govuk-summary-list__value">
+            842 days
+          </dd>
+        </div>
+      </dl>
+
+      <h2 class="govuk-heading-m">Contact Details</h2>
+
+      <dl class="govuk-summary-list govuk-!-margin-bottom-9">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Main Contact
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Ms. Sheila Todd
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Address
+          </dt>
+          <dd class="govuk-summary-list__value">
+            4th Floor<br>4 Abbey Orchard Street<br>London<br>SW1P 1HT
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Email
+          </dt>
+          <dd class="govuk-summary-list__value">
+            sheila.todd@insolvency.gsi.gov.uk
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Telephone
+          </dt>
+          <dd class="govuk-summary-list__value">
+            0207 291 6891
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Country
+          </dt>
+          <dd class="govuk-summary-list__value">
+            United Kingdom
+          </dd>
+        </div>
+      </dl>
+
+    </div>
+  </div>
+
+{% endblock %}
