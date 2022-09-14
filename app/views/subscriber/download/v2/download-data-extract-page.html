@@ -1,8 +1,15 @@
 
-{% extends "layout_eiir.html" %}
+{% extends "layout_subscriber.html" %}
 
 {% block pageTitle %}
-  Data extract download – Individual Insolvency Register
+  Download data extract – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "create-data-extract-page"
+  }) }}
 {% endblock %}
 
 {% block content %}
@@ -10,24 +17,23 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
-        Data extract download
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Download data extract
       </h1>
 
-      <p class="govuk-body">Now that your application has been approved, access to the eIIR XML extract is permitted.</p>
-      <p class="govuk-body govuk-!-margin-bottom-8">For your records, you may wish to note that we have the following details associated with your subscription.</p>
+      <p class="govuk-body govuk-!-margin-bottom-8">Now that your application has been approved, access to the eIIR XML extract is permitted.</p>
 
-    </div>
-  </div>
+      <!--<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">-->
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-
-      <h2 class="govuk-heading-m">
-        Current extract details
+      <h2 class="govuk-heading-l govuk-!-margin-bottom-8">
+        Data extract
       </h2>
 
-      <p class="govuk-body">20220912</p>
+      <a class="govuk-button govuk-!-margin-bottom-8" style="text-decoration:none;" href="">
+        Download data extract
+      </a>
+
+      <!--<p class="govuk-body">20220912</p>-->
 
       <dl class="govuk-summary-list">
         <div class="govuk-summary-list__row">
@@ -112,14 +118,7 @@
         </div>
       </dl>
 
-      <p class="govuk-body govuk-!-margin-bottom-8">7UTNB8G8</p>
-
-      <p class="govuk-body">Todays extract file is now available for download (see below)</p>
-      <p class="govuk-body">(To download, just right-click on the link below and choose 'Save Target As')</p>
-
-      <a class="govuk-button" style="text-decoration:none;" href="">
-        Download today's eIIR XML extract file
-      </a>
+      <!--<p class="govuk-body govuk-!-margin-bottom-8">7UTNB8G8</p>-->
 
     </div>
     <div class="govuk-grid-column-one-third">
@@ -132,12 +131,12 @@
           <ul class="govuk-list govuk-!-font-size-16">
             <li>
               <a class="govuk-link--no-visited-state" href="data-extract-subscriber-profile-page">
-                Data extract subscriber profile
+                View subscriber profile
               </a>
             </li>
             <li>
               <a class="govuk-link--no-visited-state" href="data-extract-download-history-page">
-                Data extract download history
+                View download history
               </a>
             </li>
           </ul>
