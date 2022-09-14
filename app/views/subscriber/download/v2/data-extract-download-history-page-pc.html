@@ -1,0 +1,153 @@
+
+{% extends "layout_subscriber.html" %}
+
+{% block pageTitle %}
+  Data extract download history – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "javascript:history.back()"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
+        Data extract download history
+      </h1>
+
+      <p class="govuk-body govuk-!-margin-bottom-8">These entries show your accesses to the IIR subscriber download page, even though the extract file itself may not have been downloaded on that access.</p>
+
+
+      <table class="govuk-table govuk-!-margin-bottom-8">
+        <thead class="govuk-table__head">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header">Date and time</th>
+            <th scope="col" class="govuk-table__header">Extract</th>
+            <th scope="col" class="govuk-table__header">Subscriber IP address</th>
+            <!--<th scope="col" class="govuk-table__header">Webserver</th>-->
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">13/12/2005 14:14:11</td>
+            <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="#">K6Y4PH3H.zip</a></td>
+            <td class="govuk-table__cell">62.25.106.209</td>
+            <td class="govuk-table__cell"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <nav class="govuk-pagination" role="navigation" aria-label="results" style="display: flex;">
+        <ul class="govuk-pagination__list">
+          <li class="govuk-pagination__item govuk-pagination__item--current">
+            <a class="govuk-link govuk-pagination__link" href="#" aria-label="Page 1" aria-current="page">
+              1
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 2">
+              2
+            </a>
+          </li>
+          <li class="govuk-pagination__item">
+            <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 3">
+              3
+            </a>
+          </li>
+        </ul>
+        <div class="govuk-pagination__next">
+          <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+              <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+            </svg></a>
+        </div>
+      </nav>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link--no-visited-state" href="data-extract-subscriber-profile-page">
+                View subscriber profile
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link--no-visited-state" href="data-extract-download-history-page">
+                View download history
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+{% endblock %}
