@@ -1,5 +1,5 @@
 
-{% extends "layout_eiir.html" %}
+{% extends "layout_subscriber.html" %}
 
 {% block pageTitle %}
   Data Extract Application Details – Individual Insolvency Register
@@ -20,13 +20,6 @@
       <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
         Tell us your details
       </h1>
-
-      <!--
-      <p>
-        You can download the Individual Insolvency Register as a
-      </p>
-      -->
-      <!--<hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">-->
 
       <fieldset class="govuk-fieldset">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
@@ -81,17 +74,17 @@
           </select>
         </div>-->
         <div class="govuk-form-group">
-          <label class="govuk-label" for="full-name">
-            Full name
+          <label class="govuk-label" for="first-name">
+            First name
           </label>
-          <input class="govuk-input govuk-!-width-two-thirds" id="full-name" name="full-name" type="text" autocomplete="full-name">
+          <input class="govuk-input govuk-!-width-two-thirds" id="first-name" name="first-name" type="text" autocomplete="first-name">
         </div>
-        <!--<div class="govuk-form-group">
+        <div class="govuk-form-group">
           <label class="govuk-label" for="website">
             Last name
           </label>
           <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
-        </div>-->
+        </div>
         <div class="govuk-form-group">
           <label class="govuk-label" for="address-line-1">
             Address line 1
