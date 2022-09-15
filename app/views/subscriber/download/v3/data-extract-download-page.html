@@ -1,0 +1,138 @@
+
+{% extends "layout_subscriber.html" %}
+
+{% block pageTitle %}
+  Download data extract – Individual Insolvency Register
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-l">
+        Download data extract
+      </h1>
+
+      <p class="govuk-body">Now that your application has been approved, access to the eIIR XML extract is permitted.</p>
+
+      <p class="govuk-body govuk-!-margin-bottom-8">Your XML extract file is available to be downloaded.</p>
+
+      <a class="govuk-button govuk-!-margin-bottom-8" style="text-decoration:none;" href="data-extract-download-confirmation-page">
+        Download data extract
+      </a>
+
+      <h2 class="govuk-heading-m">
+        Download details
+      </h2>
+
+      <dl class="govuk-summary-list">
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key govuk-!-width-one-half">
+            Snapshot completed
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Snapshot date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            12/09/2022
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Extract completed
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Extract file available
+          </dt>
+          <dd class="govuk-summary-list__value">
+            Yes
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Extract date
+          </dt>
+          <dd class="govuk-summary-list__value">
+            12/09/2022
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Total entries on extract
+          </dt>
+          <dd class="govuk-summary-list__value">
+            428366
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Total bankruptcies on extract
+          </dt>
+          <dd class="govuk-summary-list__value">
+            30031
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Total IVAs on extract
+          </dt>
+          <dd class="govuk-summary-list__value">
+            369072
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            New bankruptcies (i.e. since yesterday) on extract
+          </dt>
+          <dd class="govuk-summary-list__value">
+            0
+          </dd>
+        </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__key">
+            Total DROs on snapshot
+          </dt>
+          <dd class="govuk-summary-list__value">
+            29263
+          </dd>
+        </div>
+      </dl>
+
+    </div>
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link--no-visited-state" href="data-extract-subscriber-profile-page">
+                View subscriber profile
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link--no-visited-state" href="data-extract-download-history-page">
+                View download history
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+  </div>
+
+{% endblock %}
