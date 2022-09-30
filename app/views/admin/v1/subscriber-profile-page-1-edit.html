@@ -1,0 +1,155 @@
+
+{% extends "layout_admin.html" %}
+
+{% block pageTitle %}
+  Experian – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "subscriber-list-page"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-8">
+        Experian
+      </h1>
+
+      <!--
+      <p class="govuk-body">Now that your application has been approved, access to the eIIR XML extract is permitted.</p>
+      <p class="govuk-body govuk-!-margin-bottom-8">For your records, you may wish to note that we have the following details associated with your subscription</p>
+      -->
+
+      <div class="govuk-warning-text govuk-!-margin-bottom-8">
+        <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+        <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>
+          This subscription will end in 242 days
+        </strong>
+      </div>
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            Organisation or company details
+          </h2>
+        </legend>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="organisation">
+            Name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Type
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="published" selected>Other</option>
+            <option value="updated">Credit reference agency</option>
+            <option value="views">Credit card issuer</option>
+            <option value="comments">Bank or Building society</option>
+            <option value="updated">Mortgage provider</option>
+            <option value="views">Government department</option>
+            <option value="comments">Financial services</option>
+            <option value="comments">Debt recovery agents</option>
+          </select>
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+          <label class="govuk-label" for="website">
+            Website
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+      </fieldset>
+
+      <fieldset class="govuk-fieldset">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <h2 class="govuk-fieldset__heading">
+            Main contact details
+          </h2>
+        </legend>
+        <!--<div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Title
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="published" selected>Mr.</option>
+            <option value="updated">Mrs.</option>
+            <option value="views">Miss.</option>
+            <option value="views">Ms.</option>
+          </select>
+        </div>-->
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="first-name">
+            First name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="first-name" name="first-name" type="text" autocomplete="first-name">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="website">
+            Last name
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-1">
+            Address line 1
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="address-line-2">
+            Address line 2 (optional)
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line-2">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="city">
+            Town or city
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="postcode">
+            Postcode
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="postcode" name="postcode" type="text" autocomplete="postcode">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="type">
+            Country
+          </label>
+          <select class="govuk-select" id="type" name="type">
+            <option value="united-kingdom" selected>United Kingdom</option>
+            <option value="outside-united-kingdom">Outside United Kingdom</option>
+          </select>
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="website">
+            Email address
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+        <div class="govuk-form-group govuk-!-margin-bottom-8">
+          <label class="govuk-label" for="website">
+            Telephone number
+          </label>
+          <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website">
+        </div>
+      </fieldset>
+
+      <a class="govuk-button govuk-!-margin-bottom-8" style="text-decoration:none;" href="subscriber-profile-page-1">
+        Save and continue
+      </a>
+
+    </div>
+  </div>
+
+{% endblock %}
