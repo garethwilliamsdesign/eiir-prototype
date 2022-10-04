@@ -171,10 +171,6 @@
         </strong>
       </div>
 
-      <!--<div class="govuk-inset-text">
-        This subscription is due to expire in 312 days.
-      </div>-->
-
       <dl class="govuk-summary-list govuk-!-margin-bottom-9">
         <div class="govuk-summary-list__row">
           <dt class="govuk-summary-list__key">
@@ -256,16 +252,27 @@
             </a>
           </dd>
         </div>
+        <div class="govuk-summary-list__row">
+          <dt class="govuk-summary-list__value">
+            sarah.philips@uk.experian.com
+          </dt>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page-1-change">
+              Change<span class="govuk-visually-hidden"> sarah.philips@uk.experian.com</span>
+            </a>
+          </dd>
+          <dd class="govuk-summary-list__actions">
+            <a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page-1-remove">
+              Remove<span class="govuk-visually-hidden"> sarah.philips@uk.experian.com</span>
+            </a>
+          </dd>
+        </div>
       </dl>
 
-      <form action="subscriber-profile-page-1-add" method="post" novalidate>
-
-        <button class="govuk-button" data-module="govuk-button">
-          Add another email address
-        </button>
-
-      </form>
-
+      <button disabled="disabled" aria-disabled="true" class="govuk-button govuk-button--disabled" data-module="govuk-button">
+        Add another email address
+      </button>
+      
     </div>
   </div>
 
