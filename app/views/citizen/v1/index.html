@@ -9,12 +9,12 @@
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Individual Insolvency Register (IIR)
+      <h1 class="govuk-heading-l">
+        Individual Insolvency Register
       </h1>
 
-      <p>The IIR is an amalgamation of the individual insolvency, bankruptcy restrictions and debt relief restrictions registers. The Insolvency Service is required by statute to maintain these registers, keep them up to date and make them available for public inspection.</p>
-      <p>The IIR contains details of:</p>
+      <p class="govuk-body">The Individual Insolvency Register (IIR) is an amalgamation of the individual insolvency, bankruptcy restrictions and debt relief restrictions registers. The Insolvency Service is required by statute to maintain these registers, keep them up to date and make them available for public inspection.</p>
+      <p class="govuk-body">The IIR contains details of:</p>
 
       <ul class="govuk-list govuk-list--bullet">
         <li>bankruptcies that are current or have ended in the last 3 months</li>
@@ -24,12 +24,14 @@
         <li>current debt relief restrictions orders or undertakings (DRROs/DRRUs) and interim debt relief restrictions orders (iDRROs)</li>
       </ul>
 
-      <p>For more information about the IIR please read the <a href="#" class="govuk-link">guidance</a> or our <a href="#" class="govuk-link">frequently asked questions</a>.</p>
+      <!--
+      <p class="govuk-body">For more information about the IIR please read the <a href="#" class="govuk-link">guidance</a> or our <a href="#" class="govuk-link">frequently asked questions</a>.</p>
+      -->
 
-      <p>Unless stated otherwise all proceedings are Main proceedings under Article 3(1), Council Regulation (EC) 2015/948 on insolvency proceedings ('EU Regulations 2015')</p>
+      <div class="govuk-inset-text">Unless stated otherwise all proceedings are Main proceedings under Article 3(1), Council Regulation (EC) 2015/948 on insolvency proceedings ('EU Regulations 2015')</div>
 
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-      
+
       <form action="/v1/index" method="post">
 
         <div class="govuk-form-group">
@@ -49,15 +51,15 @@
               items: [
                 {
                   value: "individual",
-                  text: "Search by NAME details"
+                  text: "Search by name details"
                 },
                 {
                   value: "trading",
-                  text: "Search by TRADING NAME details"
+                  text: "Search by trading names details"
                 }
               ]
             }) }}
-            
+
           </fieldset>
         </div>
 
@@ -66,12 +68,21 @@
         </button>
 
       </form>
-      
+
       <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-      <p>While every effort has been made to ensure that the information provided is accurate, occasionally errors may occur. If you identify information which appears to be incorrect or omitted, please inform us using the feedback links contained within this site, so that we can investigate the matter and correct the database as required.</p>
-      <p>The Insolvency Service cannot accept responsibility for any errors or omissions as a result of negligence or otherwise. Please note that The Insolvency Service and Official Receivers cannot provide legal or financial advice. You should seek this from a Citizen's Advice Bureau, a solicitor, a qualified accountant, an authorised insolvency practitioner, reputable financial advisor or advice centre.</p>
-      <p>The Individual Insolvency Register is a publicly available register and The Insolvency Service does not endorse, nor make any representations regarding, any use made of the data on the register by third parties.</p>
+      <!--
+      <p class="govuk-body">While every effort has been made to ensure that the information provided is accurate, occasionally errors may occur. If you identify information which appears to be incorrect or omitted, please inform us using the feedback links contained within this site, so that we can investigate the matter and correct the database as required.</p>
+      <p class="govuk-body">The Insolvency Service cannot accept responsibility for any errors or omissions as a result of negligence or otherwise. Please note that The Insolvency Service and Official Receivers cannot provide legal or financial advice. You should seek this from a Citizen's Advice Bureau, a solicitor, a qualified accountant, an authorised insolvency practitioner, reputable financial advisor or advice centre.</p>
+      <p class="govuk-body">The Individual Insolvency Register is a publicly available register and The Insolvency Service does not endorse, nor make any representations regarding, any use made of the data on the register by third parties.</p>
+      -->
+
+
+
+        <div class="govuk-inset-text">The documentation available on this website is designed to provide general information only. Find out more about the <a href="/citizen/v3/terms-and-conditions">terms and conditions</a>.
+        </div>
+
+</div>
 
     </div>
   </div>
