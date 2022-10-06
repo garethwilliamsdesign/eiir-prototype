@@ -1,0 +1,143 @@
+
+{% extends "layout_admin.html" %}
+
+{% block pageTitle %}
+  Change organisation or company details – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  <a class="govuk-back-link" href="subscriber-profile-page-1">Back</a>
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <form action="subscriber-profile-page-1" method="post" novalidate>
+
+        <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
+          Change organisation or company details
+        </h1>
+  
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Organisation or company details
+            </h2>
+          </legend>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="organisation">
+              Name
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation" value="Experian">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="type">
+              Type
+            </label>
+            <select class="govuk-select" id="type" name="type">
+              <option value="published">Other</option>
+              <option value="updated" selected>Credit reference agency</option>
+              <option value="views">Credit card issuer</option>
+              <option value="comments">Bank or Building society</option>
+              <option value="updated">Mortgage provider</option>
+              <option value="views">Government department</option>
+              <option value="comments">Financial services</option>
+              <option value="comments">Debt recovery agents</option>
+            </select>
+          </div>
+          <div class="govuk-form-group govuk-!-margin-bottom-8">
+            <label class="govuk-label" for="website">
+              Website
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website" value="www.experianplc.com">
+          </div>
+        </fieldset>
+  
+        <fieldset class="govuk-fieldset">
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Main contact details
+            </h2>
+          </legend>
+          <!--<div class="govuk-form-group">
+            <label class="govuk-label" for="type">
+              Title
+            </label>
+            <select class="govuk-select" id="type" name="type">
+              <option value="published" selected>Mr.</option>
+              <option value="updated">Mrs.</option>
+              <option value="views">Miss.</option>
+              <option value="views">Ms.</option>
+            </select>
+          </div>-->
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="first-name">
+              First name
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="first-name" name="first-name" type="text" autocomplete="first-name" value="Joe">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="website">
+              Last name
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website" value="Bloggs">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-1">
+              Address line 1
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1" value="Newenham House">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="address-line-2">
+              Address line 2 (optional)
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="address-line-2" name="address-line-2" type="text" autocomplete="address-line-2" value="Northern Cross, Malahide Road">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="city">
+              Town or city
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city" value="Dublin 17">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="postcode">
+              Postcode
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="postcode" name="postcode" type="text" autocomplete="postcode" value="D17 AY61">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="type">
+              Country
+            </label>
+            <select class="govuk-select" id="type" name="type">
+              <option value="united-kingdom">United Kingdom</option>
+              <option value="outside-united-kingdom" selected>Outside United Kingdom</option>
+            </select>
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="website">
+              Email address
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website" value="joe.bloggs@experianplc.com">
+          </div>
+          <div class="govuk-form-group govuk-!-margin-bottom-8">
+            <label class="govuk-label" for="website">
+              Telephone number
+            </label>
+            <input class="govuk-input govuk-!-width-two-thirds" id="website" name="website" type="text" autocomplete="website" value="+44 (0) 344 481 8000">
+          </div>
+        </fieldset>
+
+        <button class="govuk-button" data-module="govuk-button">
+          Continue
+        </button>
+
+      </form>
+
+    </div>
+  </div>
+
+{% endblock %}
