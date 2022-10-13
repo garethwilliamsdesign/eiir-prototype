@@ -7,6 +7,9 @@
 
 {% block content %}
 
+<div class="govuk-width-container">
+
+ <main class="govuk-main-wrapper">
 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
@@ -14,24 +17,29 @@
       <h1 class="govuk-heading-l">
         Admin
       </h1>
+    </div>
+  </div>
 
-    <div class="govuk-grid-row">
-  <div class="govuk-grid-column-one-half">
+
+
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-m govuk-!-font-weight-bold">Feedback</h2>
     <p>View feedback from citizens.</p>
     <p class="govuk-body">
     <a href="/styles/" class="govuk-link govuk-!-font-weight-bold">View feedback</a>
     </p>
   </div>
-  <div class="govuk-grid-column-one-half">
+  <div class="govuk-grid-column-one-third">
     <h2 class="govuk-heading-m govuk-!-font-weight-bold">Subscribers</h2>
-    <p>Add and update subscribers.</p>
+    <p>Add subscribers and update subscriber details.</p>
     <p class="govuk-body">
-    <a href="subscriber-list-page" class="govuk-link govuk-!-font-weight-bold">Update subscriber</a><br>
-    </p>
-    <p class="govuk-body">
-    <a href="/styles/" class="govuk-link govuk-!-font-weight-bold">Add subscriber</a>
+    <a href="/styles/" class="govuk-link govuk-!-font-weight-bold">Add subscribers</a>
     <p>
+    <p class="govuk-body">
+    <a href="subscriber-list-page" class="govuk-link govuk-!-font-weight-bold">Update subscribers</a><br>
+    </p>
+
 
     <!--
   </div>
@@ -45,6 +53,8 @@
 
     </div>
   </div>
+  </div>
+  </main>
   </div>
 
 {% endblock %}
