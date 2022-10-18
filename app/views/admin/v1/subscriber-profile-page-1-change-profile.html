@@ -6,7 +6,23 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="subscriber-profile-page-1">Back</a>
+<div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="admin-area">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="subscriber-list-page">View subscribers</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="subscriber-profile-page-1">Subscriber details</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    Update subscriber details
+  </li>
+
+</ol>
+</div>
 {% endblock %}
 
 {% block content %}
