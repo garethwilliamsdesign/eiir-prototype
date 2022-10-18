@@ -6,7 +6,16 @@
 {% endblock %}
 
 {% block beforeContent %}
-  <a class="govuk-back-link" href="admin-area">Back</a>
+<div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="admin-area">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    View subscribers
+  </li>
+</ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -15,7 +24,7 @@
     <div class="govuk-grid-column-two-thirds">
 
       <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
-        View and update subscribers
+        View subscribers
       </h1>
 
       <p class="govuk-body govuk-!-margin-bottom-8">Select the relevant subscriber link to view and update their details.</p>
