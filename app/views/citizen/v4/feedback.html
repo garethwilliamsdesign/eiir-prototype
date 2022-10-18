@@ -1,0 +1,149 @@
+
+{% extends "layout_eiir.html" %}
+
+{% block pageTitle %}
+  Feedback – Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    text: "Back",
+    href: "index"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+
+  <!--
+  <div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Search the Individual Insolvency Register
+    </h1>
+  </div>
+  <div class="govuk-grid-column-one-third">
+
+  </div>
+</div>
+-->
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="contact-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+      <h1 class="govuk-fieldset__heading">
+        What would you like to tell us about?
+      </h1>
+    </legend>
+    <div id="contact-hint" class="govuk-hint">
+      Select one option.
+    </div>
+    <div class="govuk-radios" data-module="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact-2" name="contact" type="radio" value="case" checked data-aria-controls="conditional-contact-2">
+        <label class="govuk-label govuk-radios__label" for="contact-2">
+          An insolvency agreement, bankruptcy case or debt relief order
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact-2">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Name
+          </label>
+          <input class="govuk-input govuk-!-width-three-quarters" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Case number
+          </label>
+          <input class="govuk-input govuk-!-width-three-quarters" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+        </div>
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel" autocomplete="tel">
+        </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email" data-aria-controls="conditional-contact">
+        <label class="govuk-label govuk-radios__label" for="contact">
+          The website
+        </label>
+      </div>
+      <div class="govuk-radios__conditional" id="conditional-contact">
+          <label class="govuk-label" for="contact-by-email">
+            Enter URL or name of page
+          </label>
+          <input class="govuk-input" id="contact-by-email" name="contact-by-email" type="email" spellcheck="false" aria-describedby="contact-by-email-error" autocomplete="email">
+
+      </div>
+
+    </div>
+
+  </fieldset>
+
+  <div class="govuk-form-group">
+    <h1 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
+        Can you provide more detail?
+      </label>
+    </h1>
+    <div id="more-detail-hint" class="govuk-hint">
+      Do not include personal or financial information, like your National Insurance number or credit card details.
+    </div>
+    <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+  </div>
+
+</div>
+
+      <a class="govuk-button" style="text-decoration:none;" href="search-results-page">
+        Submit
+      </a>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-m" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link--no-visited-state" href="https://www.gov.uk/get-help-insolvency-service">
+                Get help from the Insolvency Service
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link--no-visited-state" href="https://www.gov.uk/browse/tax/court-claims-debt-bankruptcy">
+                Find out more about bankruptcy and insolvency
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+{% endblock %}
