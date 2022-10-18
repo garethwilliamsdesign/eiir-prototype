@@ -6,10 +6,16 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
-    text: "Back",
-    href: "index"
-  }) }}
+<div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="index">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    Search
+  </li>
+</ol>
+</div>
 {% endblock %}
 
 {% block content %}
