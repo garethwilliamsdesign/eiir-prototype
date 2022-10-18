@@ -20,7 +20,6 @@
   <li class="govuk-breadcrumbs__list-item">
     Update subscriber details
   </li>
-
 </ol>
 </div>
 {% endblock %}
@@ -48,22 +47,23 @@
             </label>
             <input class="govuk-input govuk-!-width-two-thirds" id="organisation" name="organisation" type="text" autocomplete="organisation" value="Experian">
           </div>
-          <!--
           <div class="govuk-form-group">
             <label class="govuk-label" for="type">
               Type
             </label>
             <select class="govuk-select" id="type" name="type">
-              <option value="published">Other</option>
-              <option value="updated" selected>Credit reference agency</option>
+              <option value="published" selected>Select</option>
+              <option value="updated">Credit reference agency</option>
               <option value="views">Credit card issuer</option>
               <option value="comments">Bank or Building society</option>
               <option value="updated">Mortgage provider</option>
               <option value="views">Government department</option>
               <option value="comments">Financial services</option>
               <option value="comments">Debt recovery agents</option>
+              <option value="published">Other</option>
             </select>
           </div>
+          <!--
           <div class="govuk-form-group govuk-!-margin-bottom-8">
             <label class="govuk-label" for="website">
               Website
