@@ -6,10 +6,19 @@
 {% endblock %}
 
 {% block beforeContent %}
-  {{ govukBackLink({
-    text: "Back",
-    href: "index"
-  }) }}
+<div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="index">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="case-detail-page">Case details</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    Report an error or issue
+  </li>
+</ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -112,7 +121,7 @@ We’ll only use these to contact you about the issue if we need more evidence.<
 
 <div class="govuk-form-group">
   <label class="govuk-label" for="full-name">
-    Name
+    Full name
   </label>
   <input class="govuk-input" id="full-name" name="full-name" type="text" spellcheck="false" autocomplete="name">
 </div>
