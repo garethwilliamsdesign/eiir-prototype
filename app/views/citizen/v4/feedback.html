@@ -39,24 +39,31 @@
 
       <p class="govuk-body">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        If you've noticed an issue with an insolvency or bankruptcy case, you can <a href="report-an-issue">report an error or issue</a>.
       </p>
 
-      <div class="govuk-form-group">
-        <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="more-detail">
-            How could we improve this service?
-          </label>
-        </h2>
-        <div id="more-detail-hint" class="govuk-hint">
-          Do not include personal or financial information, like your National Insurance number or credit card details.
+      <div class="govuk-character-count" data-module="govuk-character-count" data-maxlength="200">
+        <div class="govuk-form-group">
+          <h2 class="govuk-label-wrapper"><label class="govuk-label govuk-label--m" for="with-hint">
+              How can we improve this service?
+            </label>
+          </h2>
+          <div id="with-hint-hint" class="govuk-hint">
+            Do not include personal or financial information, such as your National Insurance number or credit card details.
+          </div>
+          <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="with-hint" rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
         </div>
-        <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
-      </div>
 
+        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+          You can enter up to 200 characters
+        </div>
+
+      </div>
       <h2 class="govuk-heading-m">
         Contact details
       </h2>
 
-      <p class="govuk-body">Your suggestions can be anonymous. We’ll only contact you about your suggestions if you want us to.</p>
+      <p class="govuk-body">Your comments can be anonymous, but if you'd like us to get in touch about your feedback please tell us your contact details.</p>
 
       <div class="govuk-form-group">
         <label class="govuk-label" for="full-name">
