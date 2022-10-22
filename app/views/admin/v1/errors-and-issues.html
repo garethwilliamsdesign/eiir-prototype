@@ -23,17 +23,12 @@
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
 
-
-
     <h1 class="govuk-heading-l">
-      Errors and issues
+      Errors and issue reports
     </h1>
-
-  </div>
-  <div class="govuk-grid-column-one-third">
-
   </div>
 </div>
+
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-one-third">
 
@@ -41,191 +36,24 @@
       Filter
     </h2>
 
-    <!--<div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-          <h2 class="govuk-fieldset__heading">
-            Court
-          </h2>
-        </legend>
-        <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
-            <label class="govuk-label govuk-radios__label" for="changed-name">
-              Monthly
-            </label>
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-              Yearly
-            </label>
-          </div>
-        </div>
-      </fieldset>
-    </div>-->
-
-    <div class="govuk-grid-column-one-third">
-
-      </div>
     <div class="govuk-form-group">
-      <fieldset class="govuk-fieldset">
-        <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
-          <h3 class="govuk-fieldset__heading">
-            Organisation
-          </h3>
-        </legend>
-        <div class="govuk-radios govuk-radios--small" data-module="govuk-radios">
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name" name="changed-name" type="radio" value="month">
-            <label class="govuk-label govuk-radios__label" for="changed-name">
-              Member of the public
-            </label>
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-              Credit reference agency
-            </label>
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-              Credit card issuer
-            </label>
-          </div>
-          <div class="govuk-radios__item">
-            <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="year">
-            <label class="govuk-label govuk-radios__label" for="changed-name-2">
-              Bank or building society
-            </label>
-          </div>
-        </div>
-      </fieldset>
+  <label class="govuk-label" for="sort">
+    Sort by
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Recently published</option>
+    <option value="updated" selected>Recently updated</option>
+    <option value="views">Most views</option>
+    <option value="comments">Most comments</option>
+  </select>
     </div>
-
-
   </div>
+
   <div class="govuk-grid-column-two-thirds">
-
-
-        <!--
-      <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            ID
-          </dt>
-          <dd class="govuk-summary-list__value">
-            64829
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Date
-          </dt>
-          <dd class="govuk-summary-list__value">
-            21/10/2022
-          </dd>
-        </div>
-        </dl>
-
-        <dl class="govuk-summary-list">
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Name
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Sarah Philips
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Organisation
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Member of the public
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Email address
-          </dt>
-          <dd class="govuk-summary-list__value">
-
-          </dd>
-        </div>
-        </dl>
-
-        <dl class="govuk-summary-list">
-          <h2 class="govuk-heading-m">
-            Case details
-          </h2>
-
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Case name
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Sarah Philips
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Court name
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Voluntary Liquidation Cases
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Type
-          </dt>
-          <dd class="govuk-summary-list__value">
-          	Individual Voluntary Arrangement
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Case number
-          </dt>
-          <dd class="govuk-summary-list__value">
-            N/A
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Order or arrangement date
-          </dt>
-          <dd class="govuk-summary-list__value">
-            4 July 2019
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Office
-          </dt>
-          <dd class="govuk-summary-list__value">
-            The Insolvency Service
-          </dd>
-        </div>
-        <div class="govuk-summary-list__row">
-          <dt class="govuk-summary-list__key">
-            Error or issue
-          </dt>
-          <dd class="govuk-summary-list__value">
-            Lorem ipsum
-          </dd>
-        </div>
-        </dl>
-
-        -->
-
-    <div class="search-result" style="position: relative; padding: 15px 40px 15px 0; border-bottom: 1px solid #bfc1c3;">
-      <h3 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+      <h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
         64829
-      </h3>
-      <ul class="govuk-list search-result-details">
+      </h2>
+      <ul class="govuk-list">
         <li>
           Date: 21/10/2022
         </li>
@@ -236,8 +64,15 @@
           Organisation: Member of the public
         </li>
         <li>
-          Email address: IVA
+          Email address: sarah.philips@example.co.uk
         </li>
+        </ul>
+
+        <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+          Report
+        </h3>
+
+        <ul class="govuk-list">
         <li>
           Case name: Vikki Adams
         </li>
@@ -257,30 +92,92 @@
           Office: The Insolvency Service
         </li>
       </ul>
+
+      <div class="govuk-form-group">
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+  64829
+</h2>
+
+<dl class="govuk-summary-list">
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Date
+    </dt>
+    <dd class="govuk-summary-list__value">
+      21/10/2022
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Reporter name
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Sarah Philips
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Organisation
+    </dt>
+    <dd class="govuk-summary-list__value">
+      Member of the public
+    </dd>
+  </div>
+  <div class="govuk-summary-list__row">
+    <dt class="govuk-summary-list__key">
+      Email address
+    </dt>
+    <dd class="govuk-summary-list__value">
+      sarah.phillips@example.com
+    </dd>
+  </div>
+</dl>
+
+  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+    Report
+  </h3>
+
+  <ul class="govuk-list">
+  <li>
+    Case name: Vikki Adams
+  </li>
+  <li>
+    Court name: Voluntary Liquidation Cases
+  </li>
+  <li>
+    Type: Individual Voluntary Arrangement
+  </li>
+  <li>
+    Case number: N/A
+  </li>
+  <li>
+    Order or arrangement date: 4 July 2019
+  </li>
+  <li>
+    Office: The Insolvency Service
+  </li>
+</ul>
+
+<div class="govuk-form-group">
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+
+
     </div>
-    <div class="search-result" style="position: relative; padding: 15px 40px 15px 0; border-bottom: 1px solid #bfc1c3;">
-      <h3 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
-        <a class="govuk-link--no-visited-state" href="/v2/case-detail-page-6B">VIKKI ADAMS</a>
-      </h3>
-      <ul class="govuk-list search-result-details">
-        <li>
-          Date of birth: 05/09/1978
-        </li>
-        <li>
-          Court: VOL
-        </li>
-        <li>
-          Number:
-        </li>
-        <li>
-          Start date: 04/07/2019
-        </li>
-        <li>
-          Type: IVA
-        </li>
-      </ul>
+  </div>
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-third">
+      &nbsp;
     </div>
 
+
+    <div class="govuk-grid-column-two-thirds">
     <nav class="govuk-pagination" role="navigation" aria-label="results" style="display: flex;">
       <div class="govuk-pagination__prev">
         <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="prev">
@@ -312,21 +209,11 @@
           </svg></a>
       </div>
     </nav>
-
     </div>
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-one-third">
-
-      </div>
-
-      <div class="govuk-grid-column-two-thirds">
 
 
-    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
 
-  </div>
-  </div>
 </div>
 
 {% endblock %}
