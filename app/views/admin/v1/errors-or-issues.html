@@ -1,0 +1,335 @@
+
+{% extends "layout_admin.html" %}
+
+{% block pageTitle %}
+  Admin - Individual Insolvency Register
+{% endblock %}
+
+{% block beforeContent %}
+<div class="govuk-breadcrumbs">
+<ol class="govuk-breadcrumbs__list">
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="admin-area">Home</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    Errors or issues
+  </li>
+</ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Errors or issues
+    </h1>
+  </div>
+</div>
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-one-third">
+
+    <h2 class="govuk-heading-m">
+      Filter
+    </h2>
+
+    <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Select organisation
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published" selected>All</option>
+    <option value="updated" >Member of the public</option>
+    <option value="views">Credit reference agency</option>
+    <option value="comments">Credit card issuer</option>
+    <option value="updated" >Bank or building society</option>
+    <option value="views">Mortgage provider</option>
+    <option value="comments">Government department</option>
+    <option value="updated" >Financial services</option>
+    <option value="views">Debt recovery agency</option>
+    <option value="comments">Other</option>
+  </select>
+    </div>
+  </div>
+
+  <div class="govuk-grid-column-two-thirds">
+      <h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+        64872
+      </h2>
+      <ul class="govuk-list">
+        <li>
+          <b>Report date</b>: 21/10/2022
+        </li>
+        <li>
+          <b>Reporter name</b>: Sarah Philips
+        </li>
+        <li>
+          <b>Reporter organisation</b>: Member of the public
+        </li>
+        <li>
+          <b>Reporter email address</b>: sarah.philips@example.co.uk
+        </li>
+
+        <!--
+        <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+          Report
+        </h3>
+        -->
+        <li>
+          <b>Case name</b>: Vikki Adams
+        </li>
+        <li>
+          <b>Court name</b>: Voluntary Liquidation Cases
+        </li>
+        <li>
+          <b>Type</b>: Individual Voluntary Arrangement
+        </li>
+        <li>
+          <b>Case number</b>: N/A
+        </li>
+        <li>
+          <b>Order or arrangement date</b>: 4 July 2019
+        </li>
+        <li>
+          <b>Office</b>: The Insolvency Service
+        </li>
+      </ul>
+
+      <div class="govuk-form-group">
+  <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+<ul class="govuk-list">
+  <li>
+    <b>ID</b>: 64871
+  </li>
+  <li>
+    <b>Report date</b>: 21/10/2022
+  </li>
+  <li>
+    <b>Reporter name</b>: Sarah Philips
+  </li>
+  <li>
+    <b>Reporter organisation</b>: Member of the public
+  </li>
+  <li>
+    <b>Reporter email address</b>: sarah.philips@example.co.uk
+  </li>
+
+  <!--
+  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+    Report
+  </h3>
+  -->
+  <li>
+    <b>Case name</b>: Vikki Adams
+  </li>
+  <li>
+    <b>Court name</b>: Voluntary Liquidation Cases
+  </li>
+  <li>
+    <b>Type</b>: Individual Voluntary Arrangement
+  </li>
+  <li>
+    <b>Case number</b>: N/A
+  </li>
+  <li>
+    <b>Order or arrangement date</b>: 4 July 2019
+  </li>
+  <li>
+    <b>Office</b>: The Insolvency Service
+  </li>
+</ul>
+
+
+
+<div class="govuk-form-group">
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+  64829
+</h2>
+<ul class="govuk-list">
+  <li>
+    <b>Report date</b>: 21/10/2022
+  </li>
+  <li>
+    <b>Reporter name</b>: Sarah Philips
+  </li>
+  <li>
+    <b>Reporter organisation</b>: Member of the public
+  </li>
+  <li>
+    <b>Reporter email address</b>: sarah.philips@example.co.uk
+  </li>
+
+  <!--
+  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+    Report
+  </h3>
+  -->
+  <li>
+    <b>Case name</b>: Vikki Adams
+  </li>
+  <li>
+    <b>Court name</b>: Voluntary Liquidation Cases
+  </li>
+  <li>
+    <b>Type</b>: Individual Voluntary Arrangement
+  </li>
+  <li>
+    <b>Case number</b>: N/A
+  </li>
+  <li>
+    <b>Order or arrangement date</b>: 4 July 2019
+  </li>
+  <li>
+    <b>Office</b>: The Insolvency Service
+  </li>
+</ul>
+
+<div class="govuk-form-group">
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+  64829
+</h2>
+<ul class="govuk-list">
+  <li>
+    <b>Report date</b>: 21/10/2022
+  </li>
+  <li>
+    <b>Reporter name</b>: Sarah Philips
+  </li>
+  <li>
+    <b>Reporter organisation</b>: Member of the public
+  </li>
+  <li>
+    <b>Reporter email address</b>: sarah.philips@example.co.uk
+  </li>
+
+  <!--
+  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+    Report
+  </h3>
+  -->
+  <li>
+    <b>Case name</b>: Vikki Adams
+  </li>
+  <li>
+    <b>Court name</b>: Voluntary Liquidation Cases
+  </li>
+  <li>
+    <b>Type</b>: Individual Voluntary Arrangement
+  </li>
+  <li>
+    <b>Case number</b>: N/A
+  </li>
+  <li>
+    <b>Order or arrangement date</b>: 4 July 2019
+  </li>
+  <li>
+    <b>Office</b>: The Insolvency Service
+  </li>
+</ul>
+
+<div class="govuk-form-group">
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+<h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+  64829
+</h2>
+<ul class="govuk-list">
+  <li>
+    <b>Report date</b>: 21/10/2022
+  </li>
+  <li>
+    <b>Reporter name</b>: Sarah Philips
+  </li>
+  <li>
+    <b>Reporter organisation</b>: Member of the public
+  </li>
+  <li>
+    <b>Reporter email address</b>: sarah.philips@example.co.uk
+  </li>
+
+  <!--
+  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
+    Report
+  </h3>
+  -->
+  <li>
+    <b>Case name</b>: Vikki Adams
+  </li>
+  <li>
+    <b>Court name</b>: Voluntary Liquidation Cases
+  </li>
+  <li>
+    <b>Type</b>: Individual Voluntary Arrangement
+  </li>
+  <li>
+    <b>Case number</b>: N/A
+  </li>
+  <li>
+    <b>Order or arrangement date</b>: 4 July 2019
+  </li>
+  <li>
+    <b>Office</b>: The Insolvency Service
+  </li>
+</ul>
+
+<div class="govuk-form-group">
+<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
+</div>
+
+<nav class="govuk-pagination" role="navigation" aria-label="results" style="display: flex;">
+  <div class="govuk-pagination__prev">
+    <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="prev">
+      <svg class="govuk-pagination__icon govuk-pagination__icon--prev" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+        <path d="m6.5938-0.0078125-6.7266 6.7266 6.7441 6.4062 1.377-1.449-4.1856-3.9768h12.896v-2h-12.984l4.2931-4.293-1.414-1.414z"></path>
+      </svg>
+      <span class="govuk-pagination__link-title">Previous</span></a>
+  </div>
+  <ul class="govuk-pagination__list">
+    <li class="govuk-pagination__item">
+      <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 1">
+        1
+      </a>
+    </li>
+    <li class="govuk-pagination__item govuk-pagination__item--current">
+      <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 2" aria-current="page">
+        2
+      </a>
+    </li>
+    <li class="govuk-pagination__item">
+      <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" aria-label="Page 3">
+        3
+      </a>
+    </li>
+  </ul>
+  <div class="govuk-pagination__next">
+    <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="next"> <span class="govuk-pagination__link-title">Next</span> <svg class="govuk-pagination__icon govuk-pagination__icon--next" xmlns="http://www.w3.org/2000/svg" height="13" width="15" aria-hidden="true" focusable="false" viewBox="0 0 15 13">
+        <path d="m8.107-0.0078125-1.4136 1.414 4.2926 4.293h-12.986v2h12.896l-4.1855 3.9766 1.377 1.4492 6.7441-6.4062-6.7246-6.7266z"></path>
+      </svg></a>
+  </div>
+</nav>
+
+</div>
+
+  <!--
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+  -->
+
+
+
+
+
+</div>
+
+{% endblock %}
