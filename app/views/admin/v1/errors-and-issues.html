@@ -38,13 +38,19 @@
 
     <div class="govuk-form-group">
   <label class="govuk-label" for="sort">
-    Sort by
+    Select organisation
   </label>
   <select class="govuk-select" id="sort" name="sort">
-    <option value="published">Recently published</option>
-    <option value="updated" selected>Recently updated</option>
-    <option value="views">Most views</option>
-    <option value="comments">Most comments</option>
+    <option value="published" selected>All</option>
+    <option value="updated" >Member of the public</option>
+    <option value="views">Credit reference agency</option>
+    <option value="comments">Credit card issuer</option>
+    <option value="updated" >Bank or building society</option>
+    <option value="views">Mortgage provider</option>
+    <option value="comments">Government department</option>
+    <option value="updated" >Financial services</option>
+    <option value="views">Debt recovery agency</option>
+    <option value="comments">Other</option>
   </select>
     </div>
   </div>
@@ -55,26 +61,23 @@
       </h2>
       <ul class="govuk-list">
         <li>
-          Date: 21/10/2022
+          Report date: 21/10/2022
         </li>
         <li>
           Reporter name: Sarah Philips
         </li>
         <li>
-          Organisation: Member of the public
+          Reporter organisation: Member of the public
         </li>
         <li>
-          Email address: sarah.philips@example.co.uk
+          Reporter email address: sarah.philips@example.co.uk
         </li>
-        </ul>
 
         <!--
         <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
           Report
         </h3>
         -->
-
-        <ul class="govuk-list">
         <li>
           Case name: Vikki Adams
         </li>
@@ -115,15 +118,12 @@
   <li>
     Email address: sarah.philips@example.co.uk
   </li>
-  </ul>
 
   <!--
   <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
     Report
   </h3>
   -->
-
-  <ul class="govuk-list">
   <li>
     Case name: Vikki Adams
   </li>
@@ -164,15 +164,12 @@
   <li>
     Email address: sarah.philips@example.co.uk
   </li>
-  </ul>
 
   <!--
   <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
     Report
   </h3>
   -->
-
-  <ul class="govuk-list">
   <li>
     Case name: Vikki Adams
   </li>
@@ -197,119 +194,15 @@
 <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
 </div>
 
-<h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
-  64829
-</h2>
-
-<dl class="govuk-summary-list">
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Date
-    </dt>
-    <dd class="govuk-summary-list__value">
-      21/10/2022
-    </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Reporter name
-    </dt>
-    <dd class="govuk-summary-list__value">
-      Sarah Philips
-    </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Organisation
-    </dt>
-    <dd class="govuk-summary-list__value">
-      Member of the public
-    </dd>
-  </div>
-  <div class="govuk-summary-list__row">
-    <dt class="govuk-summary-list__key">
-      Email address
-    </dt>
-    <dd class="govuk-summary-list__value">
-      sarah.phillips@example.com
-    </dd>
-  </div>
-</dl>
-
-  <!--
-  <h3 class="govuk-heading-s govuk-!-margin-top-4 govuk-!-margin-bottom-2">
-    Report
-  </h3>
-  -->
-
-  <dl class="govuk-summary-list">
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Case name
-      </dt>
-      <dd class="govuk-summary-list__value">
-        Vikki Adams
-      </dd>
-    </div>
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Court name
-      </dt>
-      <dd class="govuk-summary-list__value">
-        Voluntary Liquidation Cases
-      </dd>
-    </div>
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Type
-      </dt>
-      <dd class="govuk-summary-list__value">
-        Individual Voluntary Arrangement
-      </dd>
-    </div>
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Case number
-      </dt>
-      <dd class="govuk-summary-list__value">
-        N/A
-      </dd>
-    </div>
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Order or arrangement date
-      </dt>
-      <dd class="govuk-summary-list__value">
-        4 July 2019
-      </dd>
-    </div>
-    <div class="govuk-summary-list__row">
-      <dt class="govuk-summary-list__key">
-        Office
-      </dt>
-      <dd class="govuk-summary-list__value">
-        The Insolvency Service
-      </dd>
-    </div>
-  </dl>
-
-<div class="govuk-form-group">
-<textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</textarea>
 </div>
 
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-one-third">
+  &nbsp;
+</div>
 
+  <div class="govuk-grid-column-two-thirds">
 
-    </div>
-  </div>
-
-
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-third">
-      &nbsp;
-    </div>
-
-
-    <div class="govuk-grid-column-two-thirds">
     <nav class="govuk-pagination" role="navigation" aria-label="results" style="display: flex;">
       <div class="govuk-pagination__prev">
         <a class="govuk-link govuk-pagination__link govuk-link--no-visited-state" href="#" rel="prev">
@@ -341,6 +234,8 @@
           </svg></a>
       </div>
     </nav>
+    </div>
+
     </div>
 
 
