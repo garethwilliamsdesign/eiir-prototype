@@ -1,7 +1,12 @@
 {% extends "layout_eiir.html" %}
 
 {% block pageTitle %}
-Individual Insolvency Register – {{ serviceName }} – GOV.UK Prototype Kit
+Individual Insolvency Register
+{% endblock %}
+
+{% block header %}
+  <!-- Blank header with no service name for the start page -->
+  {{ govukHeader() }}
 {% endblock %}
 
 {% block content %}
