@@ -1,0 +1,123 @@
+{% extends "layout_fip.html" %}
+
+{% block pageTitle %}
+  Search – Find an insolvency practitioner
+{% endblock %}
+
+<div class="govuk-width-container">
+
+{% block beforeContent %}
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Search
+      </li>
+    </ol>
+  </div>
+{% endblock %}
+
+<main class="govuk-main-wrapper">
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Search
+  </h1>
+
+
+
+
+        <div class="govuk-grid-row">
+          <div class="govuk-grid-column-two-thirds">
+
+      <p class="govuk-body"></p>
+
+      <div class="govuk-form-group">
+  <label class="govuk-label" for="full">
+    First name
+  </label>
+  <input class="govuk-input govuk-!-width-three-quarters" id="full" name="full" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="three-quarters">
+    Last name
+  </label>
+  <input class="govuk-input govuk-!-width-three-quarters" id="three-quarters" name="three-quarters" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="two-thirds">
+    Company
+  </label>
+  <input class="govuk-input govuk-!-width-three-quarters" id="two-thirds" name="two-thirds" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="one-half">
+    IP number
+  </label>
+  <input class="govuk-input govuk-input--width-10" id="one-half" name="one-half" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="one-third">
+    Town or city
+  </label>
+  <input class="govuk-input govuk-!-width-three-quarters" id="one-third" name="one-third" type="text">
+</div>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="postcode">
+    Postcode
+  </label>
+  <input class="govuk-input govuk-input--width-10" id="one-quarter" name="one-quarter" type="text">
+</div>
+
+      <a class="govuk-button" style="text-decoration:none;" href="search-results-page">
+        Search
+      </a>
+
+
+    </div>
+
+
+    <div class="govuk-grid-column-one-third">
+
+      <aside class="app-related-items" role="complementary">
+        <h2 class="govuk-heading-s" id="subsection-title">
+          Related content
+        </h2>
+        <nav role="navigation" aria-labelledby="subsection-title">
+          <ul class="govuk-list govuk-!-font-size-16">
+            <li>
+              <a class="govuk-link--no-visited-state" href="https://www.gov.uk/get-help-insolvency-service">
+                Get help from the Insolvency Service
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link--no-visited-state" href="https://www.gov.uk/browse/tax/court-claims-debt-bankruptcy">
+                Find out more about bankruptcy and insolvency
+              </a>
+            </li>
+            <li>
+              <a class="govuk-link--no-visited-state" href="https://www.insolvencydirect.bis.gov.uk/ExternalOnlineForms/GeneralEnquiry.aspx">
+                Give feedback about the Find an insolvency practitioner service
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+      </aside>
+
+    </div>
+
+  </div>
+
+  </main>
+
+  </div>
+{% endblock %}
