@@ -5,6 +5,8 @@
   Subscribers – Individual Insolvency Register
 {% endblock %}
 
+<div class="govuk-width-container">
+
 {% block beforeContent %}
 <div class="govuk-breadcrumbs">
 <ol class="govuk-breadcrumbs__list">
@@ -18,10 +20,11 @@
 </div>
 {% endblock %}
 
+<main class="govuk-main-wrapper">
+
 {% block content %}
 
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
+
 
       <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
         Subscribers
@@ -29,8 +32,6 @@
 
       <p class="govuk-body govuk-!-margin-bottom-8">Select the relevant subscriber link to view and update their details.</p>
 
-    </div>
-  </div>
 
   <div class="govuk-grid-row">
 
@@ -45,9 +46,9 @@
     <option value="Active">Active</option>
     <option value="Inactive">Inactive</option>
   </select>
-</div>
+  </div>
+  </div>
 
-    </div>
 
     <div class="govuk-grid-column-three-quarters">
 
@@ -69,7 +70,7 @@
       <table class="govuk-table govuk-!-margin-bottom-8">
         <thead class="govuk-table__head">
           <tr class="govuk-table__row">
-            <th scope="col" class="govuk-table__header govuk-!-width-one-quarter" style="padding-top: 0;">Subscriber ID</th>
+            <th scope="col" class="govuk-table__header" style="padding-top: 0;">Subscriber ID</th>
             <th scope="col" class="govuk-table__header" style="padding-top: 0;">Company or organisation name</th>
             <!--<th scope="col" class="govuk-table__header" style="width: 15%;">Status</th>-->
           </tr>
@@ -156,5 +157,11 @@
     </div>
 
   </div>
+
+   </div>
+
+   </main>
+
+   </div>
 
 {% endblock %}
