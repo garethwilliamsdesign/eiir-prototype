@@ -63,10 +63,24 @@
   <select class="govuk-select" id="sort" name="sort">
     <option value="All" selected>All</option>
     <option value="Viewed" >Viewed</option>
-    <option value="Unviewed">Unviewed</option>
+    <option value="Unviewed">Not viewed</option>
   </select>
     </div>
+
+    <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Type
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="All" selected>All</option>
+    <option value="Viewed" >Viewed</option>
+    <option value="Unviewed">Not viewed</option>
+  </select>
+    </div>
+
   </div>
+
+
 
 
 
@@ -153,9 +167,18 @@
         Status
         </dt>
         <dd class="govuk-summary-list__value">
-          Viewed
+          Not viewed
+        </dd>
+        <dd class="govuk-summary-list__actions">
+          <button class="govuk-button" data-module="govuk-button">
+            Change to viewed
+          </button>
         </dd>
       </dl>
+
+
+
+
         <h2 class="govuk-heading-m govuk-!-margin-top-4 govuk-!-margin-bottom-2">
           Vikki Adams
         </h2>
