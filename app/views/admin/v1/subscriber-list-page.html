@@ -37,17 +37,33 @@
 
     <div class="govuk-grid-column-one-quarter">
 
-      <div class="govuk-form-group">
-  <label class="govuk-label" for="sort">
-    View
-  </label>
-  <select class="govuk-select" id="sort" name="sort">
-    <option value="All" selected>All</option>
-    <option value="Active">Active</option>
-    <option value="Inactive">Inactive</option>
-  </select>
+
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+    <label class="govuk-label" for="sort">
+      View
+    </label>
+    <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="active" name="active" type="checkbox" value="active" checked>
+        <label class="govuk-label govuk-checkboxes__label" for="active">
+          Active
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="inactive" name="inactive" type="checkbox" value="mines">
+        <label class="govuk-label govuk-checkboxes__label" for="inactive">
+          Inactive
+        </label>
+      </div>
+    </div>
+
+  </fieldset>
+</div>
+
   </div>
-  </div>
+
+
 
 
     <div class="govuk-grid-column-three-quarters">
@@ -72,6 +88,7 @@
           <tr class="govuk-table__row">
             <th scope="col" class="govuk-table__header" style="padding-top: 0;">Subscriber ID</th>
             <th scope="col" class="govuk-table__header" style="padding-top: 0;">Company or organisation name</th>
+            <th scope="col" class="govuk-table__header" style="padding-top: 0;">Subscription end</th>
             <!--<th scope="col" class="govuk-table__header" style="width: 15%;">Status</th>-->
           </tr>
         </thead>
@@ -79,52 +96,62 @@
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112201</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page-1">Experian</a></td>
+            <td class="govuk-table__cell"> 12 August 2023</td>
             <!--<td class="govuk-table__cell">Active</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112202</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page-2">Beesley & Company Insolvency Practitioners</a></td>
+            <td class="govuk-table__cell">13 August 2023</td>
             <!--<td class="govuk-table__cell">Active</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112203</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Office of Fair Trading</a></td>
+            <td class="govuk-table__cell">14 August 2023</td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112204</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Dun &amp; Bradstreet</a></td>
+            <td class="govuk-table__cell">15 August 2023</td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112205</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">TransUnion International UK Limited</a></td>
+            <td class="govuk-table__cell">16 August 2023</td>
             <!--<td class="govuk-table__cell">Active</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112206</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Public Guardianship Office</a></td>
+            <td class="govuk-table__cell">17 August 2023</td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112207</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">TDX Group Ltd</a></td>
+            <td class="govuk-table__cell">18 August 2023</td>
             <!--<td class="govuk-table__cell">Active</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112208</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Evolve</a></td>
+            <td class="govuk-table__cell">19 August 2023</td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112209</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Registry Trust Ltd</a></td>
+            <td class="govuk-table__cell">20 August 2023</td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
           </tr>
           <tr class="govuk-table__row">
             <td class="govuk-table__cell">2005112210</td>
             <td class="govuk-table__cell"><a class="govuk-link govuk-link--no-visited-state" href="subscriber-profile-page">Debtmatters Plc</a></td>
             <!--<td class="govuk-table__cell">Inactive</td>-->
+            <td class="govuk-table__cell">21 August 2023</td>
           </tr>
         </tbody>
       </table>
