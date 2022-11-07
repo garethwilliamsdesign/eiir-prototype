@@ -36,10 +36,10 @@
   <div class="govuk-error-summary__body">
     <ul class="govuk-list govuk-error-summary__list">
       <li>
-        <a href="#error-box">Enter a company or organsiation name</a>
+        <a href="#organisation">Enter the name of the company or organsiation</a>
       </li>
       <li>
-        <a href="#full-name">Enter your full name</a>
+        <a href="#company-type">Select the type of company or organisation</a>
       </li>
       <li>
         <a href="#email">Enter your email address</a>
@@ -71,16 +71,19 @@
               Name of company or organisation
             </label>
             <p id="more-detail-error" class="govuk-error-message">
-           <span class="govuk-visually-hidden">Error:</span> Enter the company or organisation name
+           <span class="govuk-visually-hidden">Error:</span>Enter the name of the company or organisation
          </p>
             <input class="govuk-input" id="organisation" name="organisation" type="text" autocomplete="organisation" value="Experian">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="type">
-              Type
+              Type of company of organisation
             </label>
+            <p id="more-detail-error" class="govuk-error-message">
+           <span class="govuk-visually-hidden">Error:</span>Select the type of company or organisation
+         </p>
             <select class="govuk-select" id="type" name="type">
-              <option value="Choose type" selected>Choose type</option>
+              <option value="Choose type" selected>Select type</option>
               <option value="Credit reference agency">Credit reference agency</option>
               <option value="Credit card issuer">Credit card issuer</option>
               <option value="Bank or building society">Bank or building society</option>
