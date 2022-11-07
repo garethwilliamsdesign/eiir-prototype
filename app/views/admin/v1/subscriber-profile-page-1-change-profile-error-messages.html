@@ -215,8 +215,8 @@
             </h3>
           </legend>
           <p id="passport-issued-error" class="govuk-error-message">
-     <span class="govuk-visually-hidden">Error:</span> The date your passport was issued must be in the past
-   </p>
+            <span class="govuk-visually-hidden">Error:</span> The application submitted date must be in the past
+          </p>
           <div class="govuk-date-input" id="passport-issued">
 
             <div class="govuk-date-input__item">
@@ -225,7 +225,7 @@
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                   Day
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
               </div>
             </div>
             <div class="govuk-date-input__item">
@@ -233,7 +233,7 @@
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                   Month
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="12">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="12">
               </div>
             </div>
             <div class="govuk-date-input__item">
@@ -241,7 +241,7 @@
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                   Year
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2005">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2005">
               </div>
             </div>
           </div>
@@ -255,13 +255,16 @@
               Start date
             </h3>
           </legend>
+          <p id="passport-issued-error" class="govuk-error-message">
+            <span class="govuk-visually-hidden">Error:</span> The start date must be in the past
+          </p>
           <div class="govuk-date-input" id="passport-issued">
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                   Day
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
               </div>
             </div>
             <div class="govuk-date-input__item">
@@ -269,7 +272,7 @@
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                   Month
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="12">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="12">
               </div>
             </div>
             <div class="govuk-date-input__item">
@@ -277,7 +280,7 @@
                 <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                   Year
                 </label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2005">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2005">
               </div>
             </div>
           </div>
@@ -292,6 +295,9 @@
                     End date
                   </h3>
                 </legend>
+                <p id="passport-issued-error" class="govuk-error-message">
+                  <span class="govuk-visually-hidden">Error:</span> The end date must be in the past
+                </p>
                 <div class="govuk-date-input" id="passport-issued">
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
@@ -301,7 +307,7 @@
                       <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
                         Day
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
                     </div>
                   </div>
                   <div class="govuk-date-input__item">
@@ -309,7 +315,7 @@
                       <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
                         Month
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="08">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="08">
                     </div>
                   </div>
                   <div class="govuk-date-input__item">
@@ -317,7 +323,7 @@
                       <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
                         Year
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2003">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2003">
                     </div>
                   </div>
                 </div>
