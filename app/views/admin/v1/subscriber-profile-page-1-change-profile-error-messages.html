@@ -29,6 +29,31 @@
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
+      <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#error-box">Enter a company or organsiation name</a>
+      </li>
+      <li>
+        <a href="#full-name">Enter your full name</a>
+      </li>
+      <li>
+        <a href="#email">Enter your email address</a>
+      </li>
+      <li>
+        <a href="#email">Enter your email address in the correct format, like name@example.com</a>
+      </li>
+      <li>
+        <a href="#organisation-error">Select an organisation</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
       <form action="subscriber-profile-page-1" method="post" novalidate>
 
         <h1 class="govuk-heading-l govuk-!-margin-bottom-8">
@@ -43,8 +68,11 @@
               </h2>
             </legend>
             <label class="govuk-label" for="organisation">
-              Name
+              Name of company or organisation
             </label>
+            <p id="more-detail-error" class="govuk-error-message">
+           <span class="govuk-visually-hidden">Error:</span> Enter the company or organisation name
+         </p>
             <input class="govuk-input" id="organisation" name="organisation" type="text" autocomplete="organisation" value="Experian">
           </div>
           <div class="govuk-form-group">
