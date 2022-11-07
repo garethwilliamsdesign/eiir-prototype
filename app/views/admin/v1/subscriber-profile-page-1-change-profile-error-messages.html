@@ -60,13 +60,15 @@
           Update subscriber details
         </h1>
 
+
+
         <fieldset class="govuk-fieldset">
-          <div class="govuk-form-group">
-            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-              <h2 class="govuk-fieldset__heading">
-                Company or organisation
-              </h2>
-            </legend>
+          <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+            <h2 class="govuk-fieldset__heading">
+              Company or organisation
+            </h2>
+          </legend>
+          <div class="govuk-form-group govuk-form-group--error">
             <label class="govuk-label" for="organisation">
               Name of company or organisation
             </label>
@@ -75,11 +77,11 @@
          </p>
             <input class="govuk-input" id="organisation" name="organisation" type="text" autocomplete="organisation" value="Experian">
           </div>
-          <div class="govuk-form-group">
+          <div class="govuk-form-group govuk-form-group--error">
             <label class="govuk-label" for="type">
               Type of company of organisation
             </label>
-            <p id="more-detail-error" class="govuk-error-message">
+            <p id="company-type" class="govuk-error-message">
            <span class="govuk-visually-hidden">Error:</span>Select the type of company or organisation
          </p>
             <select class="govuk-select" id="type" name="type">
