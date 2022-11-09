@@ -75,28 +75,28 @@
         <a href="#application-submitted-date">The application submitted date must include a day</a>
       </li>
       <li>
-        <a href="#organisation-error">The application submitted date must include a month</a>
+        <a href="#application-submitted-date">The application submitted date must include a month</a>
       </li>
       <li>
-        <a href="#organisation-error">The application submitted date must include a year</a>
+        <a href="#application-submitted-date">The application submitted date must include a year</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription start date must include a day</a>
+        <a href="#start-date">The subscription start date must include a day</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription start date must include a month</a>
+        <a href="#start-date">The subscription start date must include a month</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription start date must include a year</a>
+        <a href="#start-date">The subscription start date must include a year</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription end date must include a day</a>
+        <a href="#end-date">The subscription end date must include a day</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription end date must include a month</a>
+        <a href="#end-date">The subscription end date must include a month</a>
       </li>
       <li>
-        <a href="#organisation-error">The subscription end date must include a year</a>
+        <a href="#end-date">The subscription end date must include a year</a>
       </li>
       <li>
         <a href="#email">Enter the email address</a>
@@ -308,7 +308,7 @@
 
           </div>
 
-            <div class="govuk-form-group govuk-form-group--error">
+            <div class="govuk-form-group govuk-form-group--error" id="start-date">
         <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
             <h3 class="govuk-fieldset__heading">
@@ -350,7 +350,7 @@
         </fieldset>
         </div>
 
-              <div class="govuk-form-group govuk-form-group--error">
+              <div class="govuk-form-group govuk-form-group--error" id="end-date">
               <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
                   <h3 class="govuk-fieldset__heading">
@@ -365,18 +365,15 @@
                 <div class="govuk-date-input" id="passport-issued">
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
-
-                        End date
-
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+                      <label class="govuk-label govuk-date-input__label" for="day">
                         Day
                       </label>
-                      <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
+                      <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="end-day" name="passport-issued-day" type="text" inputmode="numeric" value="12">
                     </div>
                   </div>
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+                      <label class="govuk-label govuk-date-input__label" for="month">
                         Month
                       </label>
                       <input class="govuk-input govuk-date-input__input govuk-input--width-2 govuk-input--error" id="passport-issued-month" name="passport-issued-month" type="text" inputmode="numeric" value="08">
@@ -384,7 +381,7 @@
                   </div>
                   <div class="govuk-date-input__item">
                     <div class="govuk-form-group">
-                      <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+                      <label class="govuk-label govuk-date-input__label" for="year">
                         Year
                       </label>
                       <input class="govuk-input govuk-date-input__input govuk-input--width-4 govuk-input--error" id="passport-issued-year" name="passport-issued-year" type="text" inputmode="numeric" value="2003">
