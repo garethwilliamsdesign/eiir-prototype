@@ -42,10 +42,10 @@
         <a href="#company-type">Select the type of company or organisation</a>
       </li>
       <li>
-        <a href="#email">Enter the first name</a>
+        <a href="#first-name">Enter the first name</a>
       </li>
       <li>
-        <a href="#email">Enter the last name</a>
+        <a href="#last-name">Enter the last name</a>
       </li>
       <li>
         <a href="#email">Enter line 1 of the address</a>
@@ -72,7 +72,7 @@
         <a href="#email">Enter the email address in the correct format</a>
       </li>
       <li>
-        <a href="#organisation-error">The application submitted date must include a day</a>
+        <a href="#application-submitted-date">The application submitted date must include a day</a>
       </li>
       <li>
         <a href="#organisation-error">The application submitted date must include a month</a>
@@ -181,7 +181,7 @@
             <label class="govuk-label" for="first-name">
               First name
             </label>
-            <p id="more-detail-error" class="govuk-error-message">
+            <p id="first-name" class="govuk-error-message">
            <span class="govuk-visually-hidden">Error:</span>Enter the first name
          </p>
             <input class="govuk-input govuk-input--error" id="first-name" name="first-name" type="text" autocomplete="first-name" value="Joe">
@@ -190,7 +190,7 @@
             <label class="govuk-label" for="last-name">
               Last name
             </label>
-            <p id="more-detail-error" class="govuk-error-message">
+            <p id="last-name" class="govuk-error-message">
            <span class="govuk-visually-hidden">Error:</span>Enter the last name
          </p>
             <input class="govuk-input govuk-input--error" id="last-name" name="last-name" type="text" autocomplete="last-name" value="Bloggs">
@@ -266,13 +266,13 @@
           Subscription
         </h2>
 
-        <div class="govuk-form-group govuk-form-group--error">
+        <div class="govuk-form-group govuk-form-group--error" id="application-submitted-date">
           <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
             <h3 class="govuk-fieldset__heading">
               Application submitted date
             </h3>
           </legend>
-          <p id="passport-issued-error" class="govuk-error-message">
+          <p  class="govuk-error-message">
             <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a day<br>
             <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a month<br>
             <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a year
