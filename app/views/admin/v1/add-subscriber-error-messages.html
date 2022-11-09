@@ -270,6 +270,13 @@
                 Application submitted date
               </h3>
             </legend>
+            <p  class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span>Enter the application submitted date<br>
+              <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a day<br>
+              <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a month<br>
+              <span class="govuk-visually-hidden">Error:</span>The application submitted date must include a year<br>
+              <span class="govuk-visually-hidden">Error:</span>The application submitted date must be a real date
+            </p>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
@@ -306,9 +313,16 @@
           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
               <h2 class="govuk-fieldset__heading">
-                Start date
+                Subscription start date
               </h2>
             </legend>
+            <p id="passport-issued-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span>Enter the subscription start date<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription start date must include a day<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription start date must include a month<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription start date must include a year<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription start date must be a real date
+            </p>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
@@ -339,13 +353,20 @@
           </div>
 
 
-
+          <div class="govuk-form-group govuk-form-group--error" id="end-date">
           <fieldset class="govuk-fieldset" role="group" aria-describedby="passport-issued-hint">
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--s">
               <h3 class="govuk-fieldset__heading">
-                End date
+                Subscription end date
               </h3>
             </legend>
+            <p id="passport-issued-error" class="govuk-error-message">
+              <span class="govuk-visually-hidden">Error:</span>Enter the subscription end date<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription end date must include a day<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription end date must include a month<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription end date must include a year<br>
+              <span class="govuk-visually-hidden">Error:</span>The subscription end date must be a real date
+            </p>
             <div class="govuk-date-input" id="passport-issued">
               <div class="govuk-date-input__item">
                 <div class="govuk-form-group">
@@ -372,8 +393,8 @@
                 </div>
               </div>
             </div>
-
           </fieldset>
+          </div>
 
         <div class="govuk-form-group govuk-form-group--error">
 <fieldset class="govuk-fieldset" aria-describedby="subscription-state-hint">
@@ -415,19 +436,19 @@
   <label class="govuk-label" for="email">
     Email address 1
   </label>
-  <input class="govuk-input govuk-input--error" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+  <input class="govuk-input govuk-input--error" id="email-address-1" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 </div>
 <div class="govuk-form-group govuk-form-group--error">
   <label class="govuk-label" for="email">
     Email address 2
   </label>
-  <input class="govuk-input govuk-input--error" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+  <input class="govuk-input govuk-input--error" id="email-address-2" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 </div>
 <div class="govuk-form-group govuk-form-group--error">
   <label class="govuk-label" for="email">
     Email address 3
   </label>
-  <input class="govuk-input govuk-input--error" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+  <input class="govuk-input govuk-input--error" id="email-address-3" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 </div>
   </fieldset>
 
