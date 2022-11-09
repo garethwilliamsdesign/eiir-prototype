@@ -60,16 +60,19 @@
         <a href="#postcode">Enter the postcode in the correct format</a>
       </li>
       <li>
-        <a href="#email">Enter the telephone number</a>
+        <a href="#contact-email">Enter the email address</a>
       </li>
       <li>
-        <a href="#email">Enter the telephone number in the correct format</a>
+        <a href="#contact-email">Enter the email address in the correct format</a>
       </li>
       <li>
-        <a href="#email">Enter the email address</a>
+        <a href="#telephone">Enter the telephone number</a>
       </li>
       <li>
-        <a href="#email">Enter the email address in the correct format</a>
+        <a href="#telephone">Enter the telephone number in the correct format</a>
+      </li>
+      <li>
+        <a href="#application-submitted-date">Enter the application submitted date</a>
       </li>
       <li>
         <a href="#application-submitted-date">The application submitted date must include a day</a>
@@ -79,6 +82,9 @@
       </li>
       <li>
         <a href="#application-submitted-date">The application submitted date must include a year</a>
+      </li>
+      <li>
+        <a href="#application-submitted-date">The application submitted date must be a real date</a>
       </li>
       <li>
         <a href="#start-date">The subscription start date must include a day</a>
@@ -241,24 +247,24 @@
           </div>
           -->
           <div class="govuk-form-group govuk-form-group--error">
-            <label class="govuk-label" for="website">
+            <label class="govuk-label" for="contact-email">
               Email address
             </label>
             <p id="more-detail-error" class="govuk-error-message">
               <span class="govuk-visually-hidden">Error:</span>Enter the email address<br>
               <span class="govuk-visually-hidden">Error:</span>Enter the email address in the correct format, like name@example.com
             </p>
-            <input class="govuk-input govuk-input--error" id="email-address" name="website" type="text" autocomplete="website" value="joe.bloggs@experianplc.com">
+            <input class="govuk-input govuk-input--error" id="contact-email" name="website" type="text" autocomplete="website" value="joe.bloggs@experianplc.com">
           </div>
           <div class="govuk-form-group govuk-form-group--error govuk-!-margin-bottom-8">
-            <label class="govuk-label" for="website">
+            <label class="govuk-label" for="telephone">
               Telephone number
             </label>
             <p id="more-detail-error" class="govuk-error-message">
            <span class="govuk-visually-hidden">Error:</span>Enter the telephone number<br>
            <span class="govuk-visually-hidden">Error:</span>Enter the telephone number in the correct format
          </p>
-            <input class="govuk-input govuk-input--error govuk-input--width-20" id="website" name="website" type="text" autocomplete="website" value="+44 (0) 344 481 8000">
+            <input class="govuk-input govuk-input--error govuk-input--width-20" id="telephone" name="website" type="text" autocomplete="website" value="+44 (0) 344 481 8000">
           </div>
         </fieldset>
 
@@ -475,9 +481,9 @@
           Save and return to subscriber
         </button>
 
-        <p class="govuk-body"><a href="subscriber-profile-page-1">Cancel</a></p>
-
       </form>
+
+      <p class="govuk-body"><a href="subscriber-profile-page-1">Cancel</a></p>
 
     </div>
   </div>
