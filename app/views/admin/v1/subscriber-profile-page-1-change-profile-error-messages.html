@@ -186,7 +186,7 @@
             <p id="more-detail-error" class="govuk-error-message">
            <span class="govuk-visually-hidden">Error:</span>Enter the town or city
          </p>
-            <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city" value="Dublin 17">
+            <input class="govuk-input govuk-input--error govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city" value="Dublin 17">
           </div>
           <div class="govuk-form-group govuk-form-group--error">
             <label class="govuk-label" for="postcode">
@@ -214,9 +214,9 @@
               Email address
             </label>
             <p id="more-detail-error" class="govuk-error-message">
-           <span class="govuk-visually-hidden">Error:</span>Enter the email address<br>
-        <span class="govuk-visually-hidden">Error:</span>Enter the email address in the correct format, like name@example.com
-      </p>
+              <span class="govuk-visually-hidden">Error:</span>Enter the email address<br>
+              <span class="govuk-visually-hidden">Error:</span>Enter the email address in the correct format, like name@example.com
+            </p>
             <input class="govuk-input govuk-input--error" id="website" name="website" type="text" autocomplete="website" value="joe.bloggs@experianplc.com">
           </div>
           <div class="govuk-form-group govuk-form-group--error govuk-!-margin-bottom-8">
@@ -242,7 +242,9 @@
             </h3>
           </legend>
           <p id="passport-issued-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> The application submitted date must be in the past
+            <span class="govuk-visually-hidden">Error:</span> Enter the day<br>
+            <span class="govuk-visually-hidden">Error:</span> Enter the month<br>
+            <span class="govuk-visually-hidden">Error:</span> Enter the year
           </p>
           <div class="govuk-date-input" id="passport-issued">
 
@@ -283,7 +285,6 @@
             </h3>
           </legend>
           <p id="passport-issued-error" class="govuk-error-message">
-            <span class="govuk-visually-hidden">Error:</span> The start date must be in the past<br>
             <span class="govuk-visually-hidden">Error:</span> Enter the day<br>
             <span class="govuk-visually-hidden">Error:</span> Enter the month<br>
             <span class="govuk-visually-hidden">Error:</span> Enter the year
@@ -326,7 +327,9 @@
                   </h3>
                 </legend>
                 <p id="passport-issued-error" class="govuk-error-message">
-                  <span class="govuk-visually-hidden">Error:</span> The end date must be in the past
+                  <span class="govuk-visually-hidden">Error:</span> Enter the day<br>
+                  <span class="govuk-visually-hidden">Error:</span> Enter the month<br>
+                  <span class="govuk-visually-hidden">Error:</span> Enter the year
                 </p>
                 <div class="govuk-date-input" id="passport-issued">
                   <div class="govuk-date-input__item">
@@ -404,19 +407,23 @@
   <label class="govuk-label" for="email">
     Email address 1
   </label>
-  <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="michael.cain@uk.experian.com">
+  <p id="more-detail-error" class="govuk-error-message">
+    <span class="govuk-visually-hidden">Error:</span>Enter the email address<br>
+    <span class="govuk-visually-hidden">Error:</span>Enter the email address in the correct format, like name@example.com
+  </p>
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="michael.cain@uk.experian.com">
 </div>
 <div class="govuk-form-group">
   <label class="govuk-label" for="email">
     Email address 2
   </label>
-  <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="	jeremy.winter@uk.experian.com">
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email" value="	jeremy.winter@uk.experian.com">
 </div>
 <div class="govuk-form-group">
   <label class="govuk-label" for="email">
     Email address 3
   </label>
-  <input class="govuk-input govuk-input--width-20" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+  <input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
 </div>
   </fieldset>
 
