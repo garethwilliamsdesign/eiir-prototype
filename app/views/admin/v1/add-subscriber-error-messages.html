@@ -139,17 +139,23 @@
               Company or organisation
             </h2>
           </legend>
-          <div class="govuk-form-group">
+          <div class="govuk-form-group govuk-form-group--error">
             <label class="govuk-label" for="organisation">
-              Name
+              Name of company or organisation
             </label>
-            <input class="govuk-input" id="organisation" name="organisation" type="text" autocomplete="organisation">
+            <p id="more-detail-error" class="govuk-error-message">
+           <span class="govuk-visually-hidden">Error:</span>Enter the name of the company or organisation
+         </p>
+            <input class="govuk-input govuk-input--error" id="organisation" name="organisation" type="text" autocomplete="organisation">
           </div>
 
-          <div class="govuk-form-group">
+          <div class="govuk-form-group govuk-form-group--error">
             <label class="govuk-label" for="type">
-              Type
+              Type of company or organisation
             </label>
+            <p id="company-type" class="govuk-error-message">
+           <span class="govuk-visually-hidden">Error:</span>Select the type of company or organisation
+            </p>
             <select class="govuk-select" id="type" name="type">
               <option value="published" selected>Select type</option>
               <option value="updated">Credit reference agency</option>
@@ -193,19 +199,19 @@
             <label class="govuk-label" for="first-name">
               First name
             </label>
-            <input class="govuk-input" id="first-name" name="first-name" type="text" autocomplete="first-name">
+            <input class="govuk-input govuk-input--error" id="first-name" name="first-name" type="text" autocomplete="first-name">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="last-name">
               Last name
             </label>
-            <input class="govuk-input" id="last-name" name="last-name" type="text" autocomplete="last-name">
+            <input class="govuk-input govuk-input--error" id="last-name" name="last-name" type="text" autocomplete="last-name">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-line-1">
               Address line 1
             </label>
-            <input class="govuk-input" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1">
+            <input class="govuk-input govuk-input--error" id="address-line-1" name="address-line-1" type="text" autocomplete="address-line-1">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="address-line-2">
@@ -217,13 +223,13 @@
             <label class="govuk-label" for="city">
               Town or city
             </label>
-            <input class="govuk-input govuk-!-width-two-thirds" id="city" name="city" type="text" autocomplete="city">
+            <input class="govuk-input govuk-!-width-two-thirds govuk-input--error" id="city" name="city" type="text" autocomplete="city">
           </div>
           <div class="govuk-form-group">
             <label class="govuk-label" for="postcode">
               Postcode
             </label>
-            <input class="govuk-input govuk-input--width-10 id="postcode" name="postcode" type="text" autocomplete="postcode">
+            <input class="govuk-input govuk-input--width-10 govuk-input--error" id="postcode" name="postcode" type="text" autocomplete="postcode">
           </div>
           <!--
           <div class="govuk-form-group">
